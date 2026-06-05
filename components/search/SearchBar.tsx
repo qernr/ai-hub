@@ -18,6 +18,23 @@ function isNaturalLanguage(query: string): boolean {
   return query.length > 10 && query.includes(' ')
 }
 
+// Fallback: detect category from keywords without AI
+function detectCategoryLocally(query: string): string | null {
+  const q = query.toLowerCase()
+  if (/рисо|изображен|картин|нарисо|image|picture|draw|арт\b|photo|фото|визуал|генер.*изо/.test(q)) return 'image-generation'
+  if (/видео|video|film|ролик|клип|анимац/.test(q)) return 'video-generation'
+  if (/музык|music|song|песн|трек|мелоди|compose/.test(q)) return 'music-generation'
+  if (/код|code|program|разработ|debug|script|програ|frontend|backend/.test(q)) return 'programming'
+  if (/перевод|translat|перевести|язык|язык/.test(q)) return 'translation'
+  if (/голос|voice|речь|speech|озвучи|говор|аудио|audio/.test(q)) return 'voice-speech'
+  if (/презентац|presentation|слайд|slide|powerpoint/.test(q)) return 'presentation-creation'
+  if (/текст|написа|write|story|рассказ|эссе|статью|контент/.test(q)) return 'text-generation'
+  if (/чат|chat|помощник|assistant|разговор|поговор|отвечал/.test(q)) return 'chatbots'
+  if (/документ|document|файл|pdf|резюм|summary/.test(q)) return 'document-processing'
+  if (/данн|data|аналит|analytic|таблиц|график|отчёт/.test(q)) return 'data-analytics'
+  return null
+}
+
 export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps) {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -36,6 +53,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
       const params = new URLSearchParams(searchParams.toString())
       params.delete('page')
       params.delete('ai_intent')
+      params.delete('category')
 
       if (!trimmed) {
         params.delete('q')
@@ -47,6 +65,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
 
       if (isNaturalLanguage(trimmed)) {
         setIsAnalyzing(true)
+        let aiSucceeded = false
         try {
           const res = await fetch('/api/ai-search', {
             method: 'POST',
@@ -54,12 +73,22 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
             body: JSON.stringify({ query: trimmed, locale }),
           })
           const data = await res.json()
-          if (data.intent) params.set('ai_intent', data.intent)
+          if (data.intent) {
+            params.set('ai_intent', data.intent)
+            aiSucceeded = true
+          }
           if (data.categories?.[0]) params.set('category', data.categories[0])
         } catch {
-          // fallback to regular search
+          // ignore, fallback below
         } finally {
           setIsAnalyzing(false)
+        }
+
+        // Fallback: local keyword detection when AI is not available
+        if (!aiSucceeded) {
+          const localCategory = detectCategoryLocally(trimmed)
+          params.delete('q') // don't text-search a NL query
+          if (localCategory) params.set('category', localCategory)
         }
       }
 
@@ -74,6 +103,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
     params.delete('q')
     params.delete('page')
     params.delete('ai_intent')
+    params.delete('category')
     router.push(`/search?${params.toString()}`)
   }, [router, searchParams])
 

@@ -12,6 +12,12 @@ const CATEGORIES = [
   'document-processing',
   'chatbots',
   'data-analytics',
+  'photo-editing',
+  'design',
+  'education',
+  'meetings',
+  'automation',
+  'avatar',
 ]
 
 export async function POST(req: Request) {

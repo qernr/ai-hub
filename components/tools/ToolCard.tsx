@@ -18,6 +18,7 @@ type TranslationMap = Record<string, { description?: string }>
 
 export function ToolCard({ tool }: ToolCardProps) {
   const t = useTranslations('tool')
+  const tNames = useTranslations('categoryNames')
   const tp = useTranslations('pricing')
   const locale = useLocale()
 
@@ -67,13 +68,17 @@ export function ToolCard({ tool }: ToolCardProps) {
         </p>
 
         <div className="flex flex-wrap gap-1 mb-4">
-          {tool.categories.slice(0, 3).map(({ category }) => (
-            <Link key={category.id} href={`/categories/${category.slug}`}>
-              <Badge variant="secondary" className="text-xs hover:bg-sky-100 dark:hover:bg-sky-950 hover:text-sky-600 dark:hover:text-sky-300 cursor-pointer transition-colors dark:bg-slate-700 dark:text-slate-300">
-                {category.name}
-              </Badge>
-            </Link>
-          ))}
+          {tool.categories.slice(0, 3).map(({ category }) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const catName = (tNames as any)(category.slug) ?? category.name
+            return (
+              <Link key={category.id} href={`/categories/${category.slug}`}>
+                <Badge variant="secondary" className="text-xs hover:bg-sky-100 dark:hover:bg-sky-950 hover:text-sky-600 dark:hover:text-sky-300 cursor-pointer transition-colors dark:bg-slate-700 dark:text-slate-300">
+                  {catName}
+                </Badge>
+              </Link>
+            )
+          })}
           {tool.categories.length > 3 && (
             <Badge variant="outline" className="text-xs dark:border-slate-600 dark:text-slate-400">
               +{tool.categories.length - 3}

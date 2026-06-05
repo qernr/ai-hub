@@ -69,6 +69,25 @@
     "categoriesTitle": "Kategoriler", "popularTitle": "Popüler", "siteTitle": "Site",
     "exploreAll": "Tümünü keşfet", "supportUs": "Destek Ol",
     "rights": "Tüm hakları saklıdır.", "madeWith": "Yapay zeka topluluğu için ❤️ ile yapıldı"
+  },
+  "categoryNames": {
+    "automation": "Otomasyon",
+    "avatar": "Avatarlar ve Portreler",
+    "chatbots": "Sohbet Botları",
+    "data-analytics": "Veri Analitiği",
+    "design": "Tasarım ve Marka",
+    "document-processing": "Belge İşleme",
+    "education": "Eğitim",
+    "image-generation": "Görüntü Üretimi",
+    "meetings": "Toplantılar ve Notlar",
+    "music-generation": "Müzik Üretimi",
+    "photo-editing": "Fotoğraf Düzenleme",
+    "presentation-creation": "Sunum Oluşturma",
+    "programming": "Programlama",
+    "text-generation": "Metin Üretimi",
+    "translation": "Çeviri",
+    "video-generation": "Video Üretimi",
+    "voice-speech": "Ses ve Konuşma"
   }
 }
 

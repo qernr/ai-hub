@@ -12,7 +12,11 @@ interface CategoryCardProps {
 
 export function CategoryCard({ category }: CategoryCardProps) {
   const t = useTranslations('categories')
+  const tNames = useTranslations('categoryNames')
   const count = category._count.tools
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const localizedName = (tNames as any)(category.slug) ?? category.name
 
   return (
     <Link href={`/categories/${category.slug}`}>
@@ -23,7 +27,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors truncate">
-              {category.name}
+              {localizedName}
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 mt-0.5">
               {count} {count !== 1 ? t('tools') : t('tool')}

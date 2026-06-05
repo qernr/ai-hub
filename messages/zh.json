@@ -69,6 +69,25 @@
     "categoriesTitle": "分类", "popularTitle": "热门", "siteTitle": "网站",
     "exploreAll": "探索全部", "supportUs": "支持我们",
     "rights": "版权所有。", "madeWith": "为AI社区用❤️制作"
+  },
+  "categoryNames": {
+    "automation": "自动化",
+    "avatar": "头像与肖像",
+    "chatbots": "聊天机器人",
+    "data-analytics": "数据分析",
+    "design": "设计与品牌",
+    "document-processing": "文档处理",
+    "education": "教育",
+    "image-generation": "图像生成",
+    "meetings": "会议与笔记",
+    "music-generation": "音乐生成",
+    "photo-editing": "照片编辑",
+    "presentation-creation": "演示文稿",
+    "programming": "编程",
+    "text-generation": "文本生成",
+    "translation": "翻译",
+    "video-generation": "视频生成",
+    "voice-speech": "语音与朗读"
   }
 }
 

@@ -69,6 +69,25 @@
     "categoriesTitle": "Kategorien", "popularTitle": "Beliebt", "siteTitle": "Seite",
     "exploreAll": "Alles erkunden", "supportUs": "Unterstützen",
     "rights": "Alle Rechte vorbehalten.", "madeWith": "Mit ❤️ für die KI-Community"
+  },
+  "categoryNames": {
+    "automation": "Automatisierung",
+    "avatar": "Avatare & Porträts",
+    "chatbots": "Chatbots",
+    "data-analytics": "Datenanalyse",
+    "design": "Design & Branding",
+    "document-processing": "Dokumentenverarbeitung",
+    "education": "Bildung",
+    "image-generation": "Bildgenerierung",
+    "meetings": "Meetings & Notizen",
+    "music-generation": "Musikgenerierung",
+    "photo-editing": "Fotobearbeitung",
+    "presentation-creation": "Präsentationen",
+    "programming": "Programmierung",
+    "text-generation": "Textgenerierung",
+    "translation": "Übersetzung",
+    "video-generation": "Videogenerierung",
+    "voice-speech": "Sprache & Stimme"
   }
 }
 

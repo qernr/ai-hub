@@ -72,6 +72,25 @@
     "tools": "инструментов",
     "tool": "инструмент"
   },
+  "categoryNames": {
+    "automation": "Автоматизация",
+    "avatar": "Аватары и портреты",
+    "chatbots": "Чат-боты",
+    "data-analytics": "Аналитика данных",
+    "design": "Дизайн и брендинг",
+    "document-processing": "Обработка документов",
+    "education": "Образование",
+    "image-generation": "Генерация изображений",
+    "meetings": "Встречи и заметки",
+    "music-generation": "Генерация музыки",
+    "photo-editing": "Редактирование фото",
+    "presentation-creation": "Создание презентаций",
+    "programming": "Программирование",
+    "text-generation": "Генерация текста",
+    "translation": "Перевод",
+    "video-generation": "Генерация видео",
+    "voice-speech": "Голос и речь"
+  },
   "support": {
     "title": "Поддержи AI Hub",
     "subtitle": "AI Hub — бесплатный проект, поддерживаемый сообществом. Твоя поддержка помогает нам поддерживать и развивать самый полный каталог ИИ-инструментов.",

@@ -6,14 +6,15 @@ import { Link } from '@/i18n/navigation'
 
 export function Footer() {
   const t = useTranslations('footer')
+  const tNames = useTranslations('categoryNames')
 
   const footerLinks = {
     [t('categoriesTitle')]: [
-      { label: 'Text Generation', href: '/categories/text-generation' },
-      { label: 'Image Generation', href: '/categories/image-generation' },
-      { label: 'Video Generation', href: '/categories/video-generation' },
-      { label: 'Programming', href: '/categories/programming' },
-      { label: 'Translation', href: '/categories/translation' },
+      { label: tNames('text-generation'), href: '/categories/text-generation' },
+      { label: tNames('image-generation'), href: '/categories/image-generation' },
+      { label: tNames('video-generation'), href: '/categories/video-generation' },
+      { label: tNames('programming'), href: '/categories/programming' },
+      { label: tNames('translation'), href: '/categories/translation' },
     ],
     [t('popularTitle')]: [
       { label: 'ChatGPT', href: '/tools/chatgpt' },

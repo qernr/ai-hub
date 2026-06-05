@@ -69,6 +69,25 @@
     "categoriesTitle": "カテゴリ", "popularTitle": "人気", "siteTitle": "サイト",
     "exploreAll": "すべて探す", "supportUs": "サポート",
     "rights": "全著作権所有。", "madeWith": "AIコミュニティのために❤️を込めて"
+  },
+  "categoryNames": {
+    "automation": "自動化",
+    "avatar": "アバター・ポートレート",
+    "chatbots": "チャットボット",
+    "data-analytics": "データ分析",
+    "design": "デザイン・ブランディング",
+    "document-processing": "文書処理",
+    "education": "教育",
+    "image-generation": "画像生成",
+    "meetings": "会議・メモ",
+    "music-generation": "音楽生成",
+    "photo-editing": "写真編集",
+    "presentation-creation": "プレゼン作成",
+    "programming": "プログラミング",
+    "text-generation": "テキスト生成",
+    "translation": "翻訳",
+    "video-generation": "動画生成",
+    "voice-speech": "音声・スピーチ"
   }
 }
 

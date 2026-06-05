@@ -69,6 +69,25 @@
     "categoriesTitle": "الفئات", "popularTitle": "الأكثر شهرة", "siteTitle": "الموقع",
     "exploreAll": "استكشاف الكل", "supportUs": "ادعمنا",
     "rights": "جميع الحقوق محفوظة.", "madeWith": "صُنع بـ❤️ لمجتمع الذكاء الاصطناعي"
+  },
+  "categoryNames": {
+    "automation": "الأتمتة",
+    "avatar": "الصور الرمزية والبورتريه",
+    "chatbots": "روبوتات الدردشة",
+    "data-analytics": "تحليل البيانات",
+    "design": "التصميم والعلامة التجارية",
+    "document-processing": "معالجة المستندات",
+    "education": "التعليم",
+    "image-generation": "توليد الصور",
+    "meetings": "الاجتماعات والملاحظات",
+    "music-generation": "توليد الموسيقى",
+    "photo-editing": "تحرير الصور",
+    "presentation-creation": "إنشاء العروض التقديمية",
+    "programming": "البرمجة",
+    "text-generation": "توليد النصوص",
+    "translation": "الترجمة",
+    "video-generation": "توليد الفيديو",
+    "voice-speech": "الصوت والكلام"
   }
 }
 

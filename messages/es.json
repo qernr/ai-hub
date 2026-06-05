@@ -69,6 +69,25 @@
     "categoriesTitle": "Categorías", "popularTitle": "Popular", "siteTitle": "Sitio",
     "exploreAll": "Explorar todo", "supportUs": "Apoyar",
     "rights": "Todos los derechos reservados.", "madeWith": "Hecho con ❤️ para la comunidad IA"
+  },
+  "categoryNames": {
+    "automation": "Automatización",
+    "avatar": "Avatares y retratos",
+    "chatbots": "Chatbots",
+    "data-analytics": "Análisis de datos",
+    "design": "Diseño y marca",
+    "document-processing": "Procesamiento de documentos",
+    "education": "Educación",
+    "image-generation": "Generación de imágenes",
+    "meetings": "Reuniones y notas",
+    "music-generation": "Generación musical",
+    "photo-editing": "Edición de fotos",
+    "presentation-creation": "Creación de presentaciones",
+    "programming": "Programación",
+    "text-generation": "Generación de texto",
+    "translation": "Traducción",
+    "video-generation": "Generación de video",
+    "voice-speech": "Voz y habla"
   }
 }
 

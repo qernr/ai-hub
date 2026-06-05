@@ -22,6 +22,7 @@ export function SearchFilters({ categories }: SearchFiltersProps) {
   const searchParams = useSearchParams()
   const t = useTranslations('search')
   const tp = useTranslations('pricing')
+  const tNames = useTranslations('categoryNames')
 
   const updateParam = useCallback(
     (key: string, value: string) => {
@@ -48,11 +49,15 @@ export function SearchFilters({ categories }: SearchFiltersProps) {
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">{t('allCategories')}</SelectItem>
-          {categories.map((cat) => (
-            <SelectItem key={cat.id} value={cat.slug}>
-              {cat.icon} {cat.name}
-            </SelectItem>
-          ))}
+          {categories.map((cat) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const catName = (tNames as any)(cat.slug) ?? cat.name
+            return (
+              <SelectItem key={cat.id} value={cat.slug}>
+                {cat.icon} {catName}
+              </SelectItem>
+            )
+          })}
         </SelectContent>
       </Select>
 

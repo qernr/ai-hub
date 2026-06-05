@@ -72,6 +72,25 @@
     "tools": "tools",
     "tool": "tool"
   },
+  "categoryNames": {
+    "automation": "Automation",
+    "avatar": "Avatars & Portraits",
+    "chatbots": "Chatbots",
+    "data-analytics": "Data Analytics",
+    "design": "Design & Branding",
+    "document-processing": "Document Processing",
+    "education": "Education",
+    "image-generation": "Image Generation",
+    "meetings": "Meetings & Notes",
+    "music-generation": "Music Generation",
+    "photo-editing": "Photo Editing",
+    "presentation-creation": "Presentation Creation",
+    "programming": "Programming",
+    "text-generation": "Text Generation",
+    "translation": "Translation",
+    "video-generation": "Video Generation",
+    "voice-speech": "Voice & Speech"
+  },
   "support": {
     "title": "Support AI Hub",
     "subtitle": "AI Hub is a free, community-supported project. Your support helps us maintain and grow the most comprehensive AI tool directory.",

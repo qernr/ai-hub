@@ -11,7 +11,11 @@ type ToolTranslations = Record<string, {
   usageInstructions?: string
 }>
 
-export async function POST(req: Request) {
+export async function POST(_req: Request) {
+  return Response.json({ disabled: true, message: 'Weekly update is disabled (no API credits)' }, { status: 503 })
+}
+
+export async function _POST(req: Request) {
   const cronSecret = process.env.CRON_SECRET
   const authHeader = req.headers.get('authorization')
 

@@ -2,10 +2,10 @@
 
 import { useSearchParams } from 'next/navigation'
 import { useState, useCallback } from 'react'
-import { Search, X, Loader2 } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { useRouter } from '@/i18n/navigation'
 
 interface SearchBarProps {
@@ -46,9 +46,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
   const router = useRouter()
   const searchParams = useSearchParams()
   const t = useTranslations('search')
-  const locale = useLocale()
   const [query, setQuery] = useState(searchParams.get('q') ?? '')
-  const [isAnalyzing, setIsAnalyzing] = useState(false)
 
   const resolvedPlaceholder = placeholder ?? t('placeholder')
 
@@ -71,37 +69,16 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
       params.set('q', trimmed)
 
       if (isNaturalLanguage(trimmed)) {
-        setIsAnalyzing(true)
-        let aiSucceeded = false
-        try {
-          const res = await fetch('/api/ai-search', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ query: trimmed, locale }),
-          })
-          const data = await res.json()
-          if (data.intent) {
-            params.set('ai_intent', data.intent)
-            aiSucceeded = true
-          }
-          if (data.categories?.[0]) params.set('category', data.categories[0])
-        } catch {
-          // ignore, fallback below
-        } finally {
-          setIsAnalyzing(false)
-        }
-
-        // Fallback: local keyword detection when AI is not available
-        if (!aiSucceeded) {
-          const localCategory = detectCategoryLocally(trimmed)
-          params.delete('q') // don't text-search a NL query
-          if (localCategory) params.set('category', localCategory)
+        const localCategory = detectCategoryLocally(trimmed)
+        if (localCategory) {
+          params.delete('q')
+          params.set('category', localCategory)
         }
       }
 
       router.push(`/search?${params.toString()}`)
     },
-    [query, router, searchParams, locale]
+    [query, router, searchParams]
   )
 
   const handleClear = useCallback(() => {
@@ -118,20 +95,15 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
     <form onSubmit={handleSearch} className={className}>
       <div className="relative flex gap-2">
         <div className="relative flex-1">
-          {isAnalyzing ? (
-            <Loader2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-sky-500 animate-spin" />
-          ) : (
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-          )}
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={resolvedPlaceholder}
             className="pl-10 pr-10 h-12 text-base"
             autoFocus={autoFocus}
-            disabled={isAnalyzing}
           />
-          {query && !isAnalyzing && (
+          {query && (
             <button
               type="button"
               onClick={handleClear}
@@ -143,10 +115,9 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
         </div>
         <Button
           type="submit"
-          disabled={isAnalyzing}
-          className="h-12 px-6 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 disabled:opacity-70"
+          className="h-12 px-6 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600"
         >
-          {isAnalyzing ? t('aiAnalyzing') : t('searchBtn')}
+          {t('searchBtn')}
         </Button>
       </div>
     </form>

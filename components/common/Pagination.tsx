@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
@@ -52,7 +52,7 @@ export function Pagination({ totalPages, currentPage }: PaginationProps) {
                 size="icon"
                 className={cn(
                   'h-9 w-9',
-                  page === currentPage && 'bg-gradient-to-r from-violet-600 to-indigo-600 border-0'
+                  page === currentPage && 'bg-gradient-to-r from-sky-500 to-cyan-500 border-0'
                 )}
               >
                 {page}

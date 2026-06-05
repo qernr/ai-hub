@@ -122,9 +122,9 @@ export default async function SearchPage({
       </Suspense>
 
       {aiIntent && (
-        <div className="flex items-start gap-3 mb-6 rounded-xl border border-violet-200 dark:border-violet-800 bg-violet-50 dark:bg-violet-950/30 px-4 py-3">
-          <Sparkles className="h-5 w-5 text-violet-500 shrink-0 mt-0.5" />
-          <p className="text-sm text-violet-700 dark:text-violet-300">
+        <div className="flex items-start gap-3 mb-6 rounded-xl border border-sky-200 dark:border-sky-800 bg-sky-50 dark:bg-sky-950/30 px-4 py-3">
+          <Sparkles className="h-5 w-5 text-sky-500 shrink-0 mt-0.5" />
+          <p className="text-sm text-sky-700 dark:text-sky-300">
             <span className="font-medium">{t('aiUnderstood')}</span>{' '}
             {aiIntent}
           </p>

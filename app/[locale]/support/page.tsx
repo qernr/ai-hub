@@ -53,12 +53,12 @@ export default async function SupportPage({ params }: { params: Promise<{ locale
         </div>
       </section>
 
-      <div className="rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white text-center mb-8">
+      <div className="rounded-2xl bg-gradient-to-br from-sky-500 to-cyan-500 p-8 text-white text-center mb-8">
         <Star className="h-10 w-10 mx-auto mb-4 opacity-90" />
         <h2 className="text-2xl font-bold mb-3">{t('donateTitle')}</h2>
-        <p className="text-violet-100 mb-6 leading-relaxed">{t('donateDesc')}</p>
+        <p className="text-sky-50 mb-6 leading-relaxed">{t('donateDesc')}</p>
         <a href="https://www.donationalerts.com" target="_blank" rel="noopener noreferrer">
-          <Button size="lg" className="bg-white text-violet-600 hover:bg-gray-50 font-semibold gap-2 text-base px-8">
+          <Button size="lg" className="bg-white text-sky-600 hover:bg-gray-50 font-semibold gap-2 text-base px-8">
             <Heart className="h-5 w-5 fill-rose-500 text-rose-500" />
             {t('donateBtn')}
           </Button>

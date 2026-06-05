@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'
+﻿export const dynamic = 'force-dynamic'
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -25,7 +25,7 @@ export default async function AdminToolsPage() {
           <p className="text-gray-500 text-sm mt-1">{tools.length} tools in directory</p>
         </div>
         <Link href="/admin/tools/new">
-          <Button className="gap-2 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700">
+          <Button className="gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600">
             <Plus className="h-4 w-4" />
             Add Tool
           </Button>
@@ -90,7 +90,7 @@ export default async function AdminToolsPage() {
         </table>
         {tools.length === 0 && (
           <div className="text-center py-12 text-gray-500">
-            No tools yet. <Link href="/admin/tools/new" className="text-violet-600 hover:underline">Add the first one.</Link>
+            No tools yet. <Link href="/admin/tools/new" className="text-sky-500 hover:underline">Add the first one.</Link>
           </div>
         )}
       </div>

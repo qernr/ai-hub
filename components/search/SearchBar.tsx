@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useSearchParams } from 'next/navigation'
 import { useState, useCallback } from 'react'
@@ -119,7 +119,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
       <div className="relative flex gap-2">
         <div className="relative flex-1">
           {isAnalyzing ? (
-            <Loader2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-violet-500 animate-spin" />
+            <Loader2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-sky-500 animate-spin" />
           ) : (
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
           )}
@@ -144,7 +144,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
         <Button
           type="submit"
           disabled={isAnalyzing}
-          className="h-12 px-6 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 disabled:opacity-70"
+          className="h-12 px-6 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 disabled:opacity-70"
         >
           {isAnalyzing ? t('aiAnalyzing') : t('searchBtn')}
         </Button>

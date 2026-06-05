@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -83,7 +83,7 @@ export function CategoryForm({ category }: CategoryFormProps) {
         <Button
           type="submit"
           disabled={loading}
-          className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700"
+          className="bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600"
         >
           {loading ? 'Saving...' : isEdit ? 'Update Category' : 'Create Category'}
         </Button>

@@ -104,7 +104,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 unoptimized
               />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-violet-100 to-indigo-100 dark:from-violet-900 dark:to-indigo-900 text-violet-600 dark:text-violet-300 font-bold text-3xl">
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-sky-100 to-cyan-100 dark:from-sky-950 dark:to-cyan-950 text-sky-600 dark:text-sky-300 font-bold text-3xl">
                 {tool.name[0]}
               </div>
             )}
@@ -117,7 +117,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </span>
               {tool.categories.map(({ category }) => (
                 <Link key={category.id} href={`/categories/${category.slug}`}>
-                  <Badge variant="secondary" className="hover:bg-violet-100 dark:hover:bg-violet-900 hover:text-violet-700 dark:hover:text-violet-300 cursor-pointer">
+                  <Badge variant="secondary" className="hover:bg-sky-100 dark:hover:bg-sky-950 hover:text-sky-600 dark:hover:text-sky-300 cursor-pointer">
                     {category.icon} {category.name}
                   </Badge>
                 </Link>
@@ -125,7 +125,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             </div>
           </div>
           <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer">
-            <Button className="gap-2 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 shrink-0">
+            <Button className="gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 shrink-0">
               <ExternalLink className="h-4 w-4" />
               {t('visitWebsite')}
             </Button>
@@ -187,7 +187,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <Separator className="my-8 dark:border-gray-700" />
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <BookOpen className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                <BookOpen className="h-5 w-5 text-sky-500 dark:text-sky-400" />
                 {t('howToUse')} {tool.name}
               </h2>
               <div className="rounded-xl border dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 p-5">
@@ -203,7 +203,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <Separator className="my-8 dark:border-gray-700" />
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                <Lightbulb className="h-5 w-5 text-sky-500 dark:text-sky-400" />
                 {t('alternatives')} {tool.name}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">{t('alternativesDesc')}</p>

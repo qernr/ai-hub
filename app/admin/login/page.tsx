@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+﻿import { Suspense } from 'react'
 import { Brain } from 'lucide-react'
 import { LoginContent } from './LoginContent'
 
@@ -7,7 +7,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 text-white mx-auto mb-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-cyan-500 text-white mx-auto mb-3">
             <Brain className="h-6 w-6" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Admin Login</h1>

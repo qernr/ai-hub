@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { Brain } from 'lucide-react'
 import { useTranslations } from 'next-intl'
@@ -30,19 +30,19 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-border bg-gray-50 dark:bg-gray-900">
+    <footer className="border-t border-border bg-gray-50 dark:bg-slate-900">
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 text-white">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-cyan-500 text-white">
                 <Brain className="h-5 w-5" />
               </div>
-              <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-sky-500 to-cyan-500 bg-clip-text text-transparent">
                 AI Hub
               </span>
             </Link>
-            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{t('tagline')}</p>
+            <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{t('tagline')}</p>
           </div>
 
           {Object.entries(footerLinks).map(([title, links]) => (
@@ -53,7 +53,7 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+                      className="text-sm text-gray-500 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -65,10 +65,10 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-gray-500 dark:text-slate-400">
             © {new Date().getFullYear()} AI Hub. {t('rights')}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
+          <p className="text-sm text-gray-500 dark:text-slate-400 flex items-center gap-1">
             {t('madeWith')}
           </p>
         </div>

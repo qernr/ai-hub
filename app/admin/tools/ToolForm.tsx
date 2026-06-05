@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -161,7 +161,7 @@ export function ToolForm({ tool, categories }: ToolFormProps) {
               type="checkbox"
               checked={featured}
               onChange={(e) => setFeatured(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300 accent-violet-600"
+              className="h-4 w-4 rounded border-gray-300 accent-sky-500"
             />
             <span className="text-sm text-gray-700">Mark as featured tool</span>
           </label>
@@ -179,8 +179,8 @@ export function ToolForm({ tool, categories }: ToolFormProps) {
               onClick={() => toggleCategory(cat.id)}
               className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium border transition-colors ${
                 selectedCategories.includes(cat.id)
-                  ? 'bg-violet-600 text-white border-violet-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-violet-400'
+                  ? 'bg-sky-500 text-white border-sky-500'
+                  : 'bg-white text-gray-600 border-gray-300 hover:border-sky-400'
               }`}
             >
               {cat.icon} {cat.name}
@@ -253,7 +253,7 @@ export function ToolForm({ tool, categories }: ToolFormProps) {
         <Button
           type="submit"
           disabled={loading}
-          className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700"
+          className="bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600"
         >
           {loading ? 'Saving...' : isEdit ? 'Update Tool' : 'Create Tool'}
         </Button>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { ExternalLink, Star } from 'lucide-react'
@@ -25,10 +25,10 @@ export function ToolCard({ tool }: ToolCardProps) {
   const description = translations?.[locale]?.description ?? tool.description
 
   return (
-    <Card className="group flex flex-col overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 dark:bg-gray-800 dark:border-gray-700">
+    <Card className="group flex flex-col overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 dark:bg-slate-800 dark:border-slate-700">
       <CardContent className="flex flex-col flex-1 p-5">
         <div className="flex items-start gap-3 mb-3">
-          <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm">
+          <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border dark:border-slate-600 bg-white dark:bg-slate-700 shadow-sm">
             {tool.logo ? (
               <Image
                 src={tool.logo}
@@ -38,7 +38,7 @@ export function ToolCard({ tool }: ToolCardProps) {
                 unoptimized
               />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-violet-100 to-indigo-100 dark:from-violet-900 dark:to-indigo-900 text-violet-600 dark:text-violet-300 font-bold text-lg">
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-sky-100 to-cyan-100 dark:from-sky-950 dark:to-cyan-950 text-sky-500 dark:text-sky-300 font-bold text-lg">
                 {tool.name[0]}
               </div>
             )}
@@ -46,7 +46,7 @@ export function ToolCard({ tool }: ToolCardProps) {
 
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
-              <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors truncate">
+              <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors truncate">
                 {tool.name}
               </h3>
               {tool.featured && (
@@ -62,20 +62,20 @@ export function ToolCard({ tool }: ToolCardProps) {
           </div>
         </div>
 
-        <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1 mb-4">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed flex-1 mb-4">
           {truncate(description, 120)}
         </p>
 
         <div className="flex flex-wrap gap-1 mb-4">
           {tool.categories.slice(0, 3).map(({ category }) => (
             <Link key={category.id} href={`/categories/${category.slug}`}>
-              <Badge variant="secondary" className="text-xs hover:bg-violet-100 dark:hover:bg-violet-900 hover:text-violet-700 dark:hover:text-violet-300 cursor-pointer transition-colors dark:bg-gray-700 dark:text-gray-300">
+              <Badge variant="secondary" className="text-xs hover:bg-sky-100 dark:hover:bg-sky-950 hover:text-sky-600 dark:hover:text-sky-300 cursor-pointer transition-colors dark:bg-slate-700 dark:text-slate-300">
                 {category.name}
               </Badge>
             </Link>
           ))}
           {tool.categories.length > 3 && (
-            <Badge variant="outline" className="text-xs dark:border-gray-600 dark:text-gray-400">
+            <Badge variant="outline" className="text-xs dark:border-slate-600 dark:text-slate-400">
               +{tool.categories.length - 3}
             </Badge>
           )}
@@ -83,12 +83,12 @@ export function ToolCard({ tool }: ToolCardProps) {
 
         <div className="flex gap-2 mt-auto">
           <Link href={`/tools/${tool.slug}`} className="flex-1">
-            <Button variant="outline" size="sm" className="w-full dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700">
+            <Button variant="outline" size="sm" className="w-full dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700">
               {t('details')}
             </Button>
           </Link>
           <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-            <Button size="sm" className="w-full gap-1 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700">
+            <Button size="sm" className="w-full gap-1 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600">
               <ExternalLink className="h-3.5 w-3.5" />
               {t('visit')}
             </Button>

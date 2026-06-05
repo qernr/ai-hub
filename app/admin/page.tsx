@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'
+﻿export const dynamic = 'force-dynamic'
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -35,7 +35,7 @@ export default async function AdminDashboardPage() {
           <p className="text-gray-500 text-sm mt-1">Manage your AI tool directory</p>
         </div>
         <Link href="/admin/tools/new">
-          <Button className="gap-2 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700">
+          <Button className="gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600">
             <Plus className="h-4 w-4" />
             Add Tool
           </Button>
@@ -48,8 +48,8 @@ export default async function AdminDashboardPage() {
           <Link key={s.label} href={s.href}>
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardContent className="flex items-center gap-4 p-5">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                  <s.icon className="h-5 w-5 text-violet-600" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-100">
+                  <s.icon className="h-5 w-5 text-sky-500" />
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-gray-900">{s.value}</p>
@@ -67,7 +67,7 @@ export default async function AdminDashboardPage() {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base">Recently Added</CardTitle>
             <Link href="/admin/tools">
-              <Button variant="ghost" size="sm" className="text-violet-600">
+              <Button variant="ghost" size="sm" className="text-sky-500">
                 View all
               </Button>
             </Link>

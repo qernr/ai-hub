@@ -50,17 +50,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-violet-50 via-indigo-50 to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-950 py-20 md:py-28">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-violet-100/50 dark:from-violet-900/20 via-transparent to-transparent" />
+      <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-cyan-50 to-white dark:from-slate-900 dark:via-slate-900 dark:to-slate-950 py-20 md:py-28">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/50 dark:from-sky-900/20 via-transparent to-transparent" />
         <div className="container relative text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-violet-100 dark:bg-violet-900/40 px-4 py-1.5 text-sm font-medium text-violet-700 dark:text-violet-300 mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-100 dark:bg-sky-900/40 px-4 py-1.5 text-sm font-medium text-sky-700 dark:text-sky-300 mb-6">
             <Zap className="h-3.5 w-3.5" />
             {t('badge')}
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
             {t('title')}{' '}
-            <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-500 to-cyan-500 bg-clip-text text-transparent">
               {t('highlight')}
             </span>
           </h1>
@@ -79,7 +79,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <Link
                 key={q}
                 href={`/search?q=${encodeURIComponent(q)}`}
-                className="text-sm text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200 hover:underline transition-colors"
+                className="text-sm text-sky-500 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-200 hover:underline transition-colors"
               >
                 {q}
               </Link>
@@ -97,7 +97,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-gray-500 dark:text-gray-400 mt-1">{t('browseCategoriesDesc')}</p>
             </div>
             <Link href="/categories">
-              <Button variant="ghost" className="gap-2 text-violet-600 dark:text-violet-400 hover:text-violet-700 hover:bg-violet-50 dark:hover:bg-violet-900/20">
+              <Button variant="ghost" className="gap-2 text-sky-500 dark:text-sky-400 hover:text-sky-600 hover:bg-sky-50 dark:hover:bg-sky-900/20">
                 {t('viewAll')}
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -118,13 +118,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="flex items-center justify-between mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <TrendingUp className="h-5 w-5 text-violet-600 dark:text-violet-400" />
+                  <TrendingUp className="h-5 w-5 text-sky-500 dark:text-sky-400" />
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">{t('featured')}</h2>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400">{t('featuredDesc')}</p>
               </div>
               <Link href="/search">
-                <Button variant="ghost" className="gap-2 text-violet-600 dark:text-violet-400 hover:text-violet-700 hover:bg-violet-50 dark:hover:bg-violet-900/20">
+                <Button variant="ghost" className="gap-2 text-sky-500 dark:text-sky-400 hover:text-sky-600 hover:bg-sky-50 dark:hover:bg-sky-900/20">
                   {t('browseAll')}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
@@ -148,7 +148,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-gray-500 dark:text-gray-400 mt-1">{t('recentDesc')}</p>
             </div>
             <Link href="/search">
-              <Button variant="ghost" className="gap-2 text-violet-600 dark:text-violet-400 hover:text-violet-700 hover:bg-violet-50 dark:hover:bg-violet-900/20">
+              <Button variant="ghost" className="gap-2 text-sky-500 dark:text-sky-400 hover:text-sky-600 hover:bg-sky-50 dark:hover:bg-sky-900/20">
                 {t('seeAll')}
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -163,13 +163,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-violet-600 to-indigo-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-sky-500 to-cyan-500 text-white">
         <div className="container text-center">
           <Search className="h-12 w-12 mx-auto mb-4 opacity-80" />
           <h2 className="text-3xl font-bold mb-4">{t('ctaTitle')}</h2>
-          <p className="text-violet-100 mb-8 max-w-md mx-auto">{t('ctaDesc')}</p>
+          <p className="text-sky-50 mb-8 max-w-md mx-auto">{t('ctaDesc')}</p>
           <Link href="/search">
-            <Button size="lg" variant="outline" className="bg-white text-violet-600 hover:bg-gray-50 border-0 font-semibold gap-2">
+            <Button size="lg" variant="outline" className="bg-white text-sky-600 hover:bg-gray-50 border-0 font-semibold gap-2">
               <Search className="h-5 w-5" />
               {t('ctaBtn')}
             </Button>

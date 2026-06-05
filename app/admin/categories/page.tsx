@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Plus, Pencil, Trash2 } from 'lucide-react'
+import { Plus, Pencil } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Button } from '@/components/ui/button'
 import { DeleteCategoryButton } from './DeleteCategoryButton'

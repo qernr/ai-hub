@@ -6,7 +6,6 @@ import { ToolCard } from '@/components/tools/ToolCard'
 import { CategoryCard } from '@/components/categories/CategoryCard'
 import { prisma } from '@/lib/prisma'
 import { Suspense } from 'react'
-import { LoadingGrid } from '@/components/common/LoadingCard'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 async function getFeaturedTools() {

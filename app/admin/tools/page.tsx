@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Plus, Pencil, Trash2, ExternalLink, Star } from 'lucide-react'
+import { Plus, Pencil, ExternalLink, Star } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'

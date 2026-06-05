@@ -1,6 +1,5 @@
 'use client'
 
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Brain, LayoutDashboard, Wrench, Tag, LogOut } from 'lucide-react'

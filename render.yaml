@@ -18,3 +18,5 @@ services:
         value: aihub-prod-secret-render-min32chars-secure
       - key: NEXT_PUBLIC_APP_URL
         value: https://findyorpersonalai.onrender.com
+      - key: ANTHROPIC_API_KEY
+        sync: false

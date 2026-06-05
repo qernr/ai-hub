@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "分类", "explore": "探索", "support": "支持我们", "search": "搜索工具" },
   "home": {
     "badge": "35+ AI工具一站式",
@@ -28,7 +28,7 @@
   "search": {
     "title": "探索AI工具",
     "desc": "搜索和筛选以找到完美的AI工具",
-    "placeholder": "搜索AI工具...",
+    "placeholder": "描述您的目标或输入工具名称...",
     "toolsFound": "找到{count}个工具",
     "toolFound": "找到{count}个工具",
     "noResults": "未找到工具",
@@ -37,7 +37,9 @@
     "clearFilters": "清除筛选",
     "allCategories": "所有分类",
     "allPricing": "所有价格",
-    "searchBtn": "搜索"
+    "searchBtn": "搜索",
+    "aiAnalyzing": "AI思考中...",
+    "aiUnderstood": "AI将您的查询理解为："
   },
   "pricing": { "FREE": "免费", "FREEMIUM": "免费增值", "PAID": "付费" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "版权所有。", "madeWith": "为AI社区用❤️制作"
   }
 }
+

@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "Catégories", "explore": "Explorer", "support": "Soutenir", "search": "Chercher des outils" },
   "home": {
     "badge": "35+ outils IA en un seul endroit",
@@ -28,7 +28,7 @@
   "search": {
     "title": "Explorer les outils IA",
     "desc": "Recherchez et filtrez pour trouver l'outil parfait",
-    "placeholder": "Rechercher des outils IA...",
+    "placeholder": "Décrivez votre objectif ou entrez un nom d'outil...",
     "toolsFound": "{count} outils trouvés",
     "toolFound": "{count} outil trouvé",
     "noResults": "Aucun outil trouvé",
@@ -37,7 +37,9 @@
     "clearFilters": "Effacer les filtres",
     "allCategories": "Toutes les catégories",
     "allPricing": "Tous les prix",
-    "searchBtn": "Rechercher"
+    "searchBtn": "Rechercher",
+    "aiAnalyzing": "L'IA réfléchit...",
+    "aiUnderstood": "L'IA a interprété votre requête comme :"
   },
   "pricing": { "FREE": "Gratuit", "FREEMIUM": "Freemium", "PAID": "Payant" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "Tous droits réservés.", "madeWith": "Fait avec ❤️ pour la communauté IA"
   }
 }
+

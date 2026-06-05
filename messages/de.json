@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "Kategorien", "explore": "Entdecken", "support": "Unterstützen", "search": "Tools suchen" },
   "home": {
     "badge": "35+ KI-Tools an einem Ort",
@@ -28,7 +28,7 @@
   "search": {
     "title": "KI-Tools entdecken",
     "desc": "Suchen und filtern Sie, um das perfekte KI-Tool zu finden",
-    "placeholder": "KI-Tools suchen...",
+    "placeholder": "Beschreiben Sie Ihr Ziel oder geben Sie einen Tool-Namen ein...",
     "toolsFound": "{count} Tools gefunden",
     "toolFound": "{count} Tool gefunden",
     "noResults": "Keine Tools gefunden",
@@ -37,7 +37,9 @@
     "clearFilters": "Filter löschen",
     "allCategories": "Alle Kategorien",
     "allPricing": "Alle Preise",
-    "searchBtn": "Suchen"
+    "searchBtn": "Suchen",
+    "aiAnalyzing": "KI analysiert...",
+    "aiUnderstood": "KI verstand Ihre Anfrage als:"
   },
   "pricing": { "FREE": "Kostenlos", "FREEMIUM": "Freemium", "PAID": "Kostenpflichtig" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "Alle Rechte vorbehalten.", "madeWith": "Mit ❤️ für die KI-Community"
   }
 }
+

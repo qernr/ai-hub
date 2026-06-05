@@ -15,6 +15,7 @@ export type SearchParams = {
   category?: string
   pricing?: string
   page?: string
+  ai_intent?: string
 }
 
 export type PaginatedResult<T> = {

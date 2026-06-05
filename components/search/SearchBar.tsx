@@ -2,10 +2,10 @@
 
 import { useSearchParams } from 'next/navigation'
 import { useState, useCallback } from 'react'
-import { Search, X } from 'lucide-react'
+import { Search, X, Loader2 } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { useRouter } from '@/i18n/navigation'
 
 interface SearchBarProps {
@@ -14,27 +14,58 @@ interface SearchBarProps {
   autoFocus?: boolean
 }
 
+function isNaturalLanguage(query: string): boolean {
+  return query.length > 10 && query.includes(' ')
+}
+
 export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps) {
   const router = useRouter()
   const searchParams = useSearchParams()
   const t = useTranslations('search')
+  const locale = useLocale()
   const [query, setQuery] = useState(searchParams.get('q') ?? '')
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
 
   const resolvedPlaceholder = placeholder ?? t('placeholder')
 
   const handleSearch = useCallback(
-    (e: React.FormEvent) => {
+    async (e: React.FormEvent) => {
       e.preventDefault()
+      const trimmed = query.trim()
+
       const params = new URLSearchParams(searchParams.toString())
-      if (query.trim()) {
-        params.set('q', query.trim())
-      } else {
-        params.delete('q')
-      }
       params.delete('page')
+      params.delete('ai_intent')
+
+      if (!trimmed) {
+        params.delete('q')
+        router.push(`/search?${params.toString()}`)
+        return
+      }
+
+      params.set('q', trimmed)
+
+      if (isNaturalLanguage(trimmed)) {
+        setIsAnalyzing(true)
+        try {
+          const res = await fetch('/api/ai-search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: trimmed, locale }),
+          })
+          const data = await res.json()
+          if (data.intent) params.set('ai_intent', data.intent)
+          if (data.categories?.[0]) params.set('category', data.categories[0])
+        } catch {
+          // fallback to regular search
+        } finally {
+          setIsAnalyzing(false)
+        }
+      }
+
       router.push(`/search?${params.toString()}`)
     },
-    [query, router, searchParams]
+    [query, router, searchParams, locale]
   )
 
   const handleClear = useCallback(() => {
@@ -42,6 +73,7 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
     const params = new URLSearchParams(searchParams.toString())
     params.delete('q')
     params.delete('page')
+    params.delete('ai_intent')
     router.push(`/search?${params.toString()}`)
   }, [router, searchParams])
 
@@ -49,15 +81,20 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
     <form onSubmit={handleSearch} className={className}>
       <div className="relative flex gap-2">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+          {isAnalyzing ? (
+            <Loader2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-violet-500 animate-spin" />
+          ) : (
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+          )}
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={resolvedPlaceholder}
             className="pl-10 pr-10 h-12 text-base"
             autoFocus={autoFocus}
+            disabled={isAnalyzing}
           />
-          {query && (
+          {query && !isAnalyzing && (
             <button
               type="button"
               onClick={handleClear}
@@ -69,9 +106,10 @@ export function SearchBar({ placeholder, className, autoFocus }: SearchBarProps)
         </div>
         <Button
           type="submit"
-          className="h-12 px-6 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700"
+          disabled={isAnalyzing}
+          className="h-12 px-6 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 disabled:opacity-70"
         >
-          {t('searchBtn')}
+          {isAnalyzing ? t('aiAnalyzing') : t('searchBtn')}
         </Button>
       </div>
     </form>

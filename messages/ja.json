@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "カテゴリ", "explore": "探す", "support": "サポート", "search": "ツールを検索" },
   "home": {
     "badge": "35以上のAIツールが一箇所に",
@@ -28,7 +28,7 @@
   "search": {
     "title": "AIツールを探す",
     "desc": "絞り込んで最適なAIツールを見つける",
-    "placeholder": "AIツールを検索...",
+    "placeholder": "目的を説明するか、ツール名を入力してください...",
     "toolsFound": "{count}件のツールが見つかりました",
     "toolFound": "{count}件のツールが見つかりました",
     "noResults": "ツールが見つかりません",
@@ -37,7 +37,9 @@
     "clearFilters": "フィルターをクリア",
     "allCategories": "全カテゴリ",
     "allPricing": "全価格帯",
-    "searchBtn": "検索"
+    "searchBtn": "検索",
+    "aiAnalyzing": "AI思考中...",
+    "aiUnderstood": "AIがクエリを次のように解釈しました："
   },
   "pricing": { "FREE": "無料", "FREEMIUM": "フリーミアム", "PAID": "有料" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "全著作権所有。", "madeWith": "AIコミュニティのために❤️を込めて"
   }
 }
+

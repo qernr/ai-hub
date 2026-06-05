@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "Kategoriler", "explore": "Keşfet", "support": "Destek Ol", "search": "Araç ara" },
   "home": {
     "badge": "35+ yapay zeka aracı tek yerde",
@@ -28,7 +28,7 @@
   "search": {
     "title": "Yapay Zeka Araçlarını Keşfet",
     "desc": "Mükemmel yapay zeka aracını bulmak için ara ve filtrele",
-    "placeholder": "Yapay zeka araçlarını ara...",
+    "placeholder": "Hedefinizi açıklayın veya bir araç adı girin...",
     "toolsFound": "{count} araç bulundu",
     "toolFound": "{count} araç bulundu",
     "noResults": "Araç bulunamadı",
@@ -37,7 +37,9 @@
     "clearFilters": "Filtreleri temizle",
     "allCategories": "Tüm Kategoriler",
     "allPricing": "Tüm Fiyatlar",
-    "searchBtn": "Ara"
+    "searchBtn": "Ara",
+    "aiAnalyzing": "AI düşünüyor...",
+    "aiUnderstood": "AI sorgunuzu şu şekilde anladı:"
   },
   "pricing": { "FREE": "Ücretsiz", "FREEMIUM": "Freemium", "PAID": "Ücretli" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "Tüm hakları saklıdır.", "madeWith": "Yapay zeka topluluğu için ❤️ ile yapıldı"
   }
 }
+

@@ -33,7 +33,7 @@
   "search": {
     "title": "Explore AI Tools",
     "desc": "Search and filter to find the perfect AI tool",
-    "placeholder": "Search AI tools...",
+    "placeholder": "Describe your goal or enter a tool name...",
     "toolsFound": "{count} tools found",
     "toolFound": "{count} tool found",
     "noResults": "No tools found",
@@ -42,7 +42,9 @@
     "clearFilters": "Clear all filters",
     "allCategories": "All Categories",
     "allPricing": "All Pricing",
-    "searchBtn": "Search"
+    "searchBtn": "Search",
+    "aiAnalyzing": "AI thinking...",
+    "aiUnderstood": "AI interpreted your query as:"
   },
   "pricing": {
     "FREE": "Free",

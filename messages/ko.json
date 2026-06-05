@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": { "categories": "카테고리", "explore": "탐색", "support": "후원", "search": "도구 검색" },
   "home": {
     "badge": "한 곳에서 35개 이상의 AI 도구",
@@ -28,7 +28,7 @@
   "search": {
     "title": "AI 도구 탐색",
     "desc": "검색하고 필터링하여 완벽한 AI 도구를 찾으세요",
-    "placeholder": "AI 도구 검색...",
+    "placeholder": "목표를 설명하거나 도구 이름을 입력하세요...",
     "toolsFound": "{count}개 도구 발견",
     "toolFound": "{count}개 도구 발견",
     "noResults": "도구를 찾을 수 없음",
@@ -37,7 +37,9 @@
     "clearFilters": "필터 초기화",
     "allCategories": "모든 카테고리",
     "allPricing": "모든 가격",
-    "searchBtn": "검색"
+    "searchBtn": "검색",
+    "aiAnalyzing": "AI 분석 중...",
+    "aiUnderstood": "AI가 쿼리를 다음으로 해석했습니다:"
   },
   "pricing": { "FREE": "무료", "FREEMIUM": "프리미엄", "PAID": "유료" },
   "tool": {
@@ -69,3 +71,4 @@
     "rights": "모든 권리 보유.", "madeWith": "AI 커뮤니티를 위해 ❤️로 만듦"
   }
 }
+

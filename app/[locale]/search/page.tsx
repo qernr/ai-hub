@@ -12,6 +12,7 @@ import { LoadingGrid } from '@/components/common/LoadingCard'
 import type { SearchParams } from '@/types'
 import type { PricingType } from '@prisma/client'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { Sparkles } from 'lucide-react'
 
 export async function generateMetadata({
   params,
@@ -31,13 +32,17 @@ async function SearchResults({ params, locale }: { params: SearchParams; locale:
   const category = params.category ?? ''
   const pricing = params.pricing ?? ''
   const page = Math.max(1, parseInt(params.page ?? '1', 10))
+  const aiIntent = params.ai_intent ?? ''
 
   const where = {
     AND: [
-      query ? { OR: [
-        { name: { contains: query, mode: 'insensitive' as const } },
-        { description: { contains: query, mode: 'insensitive' as const } },
-      ]} : {},
+      // when AI processed the query, skip text search and rely on category
+      (!aiIntent && query) ? {
+        OR: [
+          { name: { contains: query, mode: 'insensitive' as const } },
+          { description: { contains: query, mode: 'insensitive' as const } },
+        ],
+      } : {},
       category ? { categories: { some: { category: { slug: category } } } } : {},
       pricing ? { pricingType: pricing as PricingType } : {},
     ],
@@ -70,7 +75,7 @@ async function SearchResults({ params, locale }: { params: SearchParams; locale:
     <div>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
         {total === 1 ? t('toolFound', { count: total }) : t('toolsFound', { count: total })}
-        {query && <span> &ldquo;<strong>{query}</strong>&rdquo;</span>}
+        {!aiIntent && query && <span> &ldquo;<strong>{query}</strong>&rdquo;</span>}
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
@@ -100,6 +105,8 @@ export default async function SearchPage({
     prisma.category.findMany({ orderBy: { name: 'asc' } }),
   ])
 
+  const aiIntent = resolvedParams.ai_intent
+
   return (
     <div className="container py-10">
       <div className="mb-8">
@@ -113,6 +120,16 @@ export default async function SearchPage({
           <SearchFilters categories={categories} />
         </div>
       </Suspense>
+
+      {aiIntent && (
+        <div className="flex items-start gap-3 mb-6 rounded-xl border border-violet-200 dark:border-violet-800 bg-violet-50 dark:bg-violet-950/30 px-4 py-3">
+          <Sparkles className="h-5 w-5 text-violet-500 shrink-0 mt-0.5" />
+          <p className="text-sm text-violet-700 dark:text-violet-300">
+            <span className="font-medium">{t('aiUnderstood')}</span>{' '}
+            {aiIntent}
+          </p>
+        </div>
+      )}
 
       <Suspense fallback={<LoadingGrid />}>
         <SearchResults params={resolvedParams} locale={locale} />

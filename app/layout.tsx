@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     title: 'AI Hub — Find the Perfect AI Tool for Any Task',
     description: 'Discover and compare 35+ AI tools.',
   },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   robots: {
     index: true,
     follow: true,

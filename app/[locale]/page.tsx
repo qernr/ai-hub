@@ -45,7 +45,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     getCategories(),
   ])
 
-  const examples = [t('example1'), t('example2'), t('example3'), t('example4'), t('example5')]
+  const examples = [
+    { label: t('example1'), href: '/search?category=image-generation' },
+    { label: t('example2'), href: '/search?category=programming' },
+    { label: t('example3'), href: '/search?category=translation' },
+    { label: t('example4'), href: '/search?category=voice-speech' },
+    { label: t('example5'), href: '/search?category=presentation-creation' },
+  ]
 
   return (
     <div>
@@ -75,13 +81,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
           <div className="flex flex-wrap justify-center gap-2">
             <span className="text-sm text-gray-500 dark:text-gray-400">{t('tryLabel')}</span>
-            {examples.map((q) => (
+            {examples.map((ex) => (
               <Link
-                key={q}
-                href={`/search?q=${encodeURIComponent(q)}`}
+                key={ex.href}
+                href={ex.href}
                 className="text-sm text-sky-500 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-200 hover:underline transition-colors"
               >
-                {q}
+                {ex.label}
               </Link>
             ))}
           </div>

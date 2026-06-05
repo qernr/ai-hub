@@ -1,0 +1,41 @@
+name: Weekly Tools Refresh
+
+on:
+  schedule:
+    - cron: '0 4 * * 1' # Monday 04:00 UTC = 07:00 Moscow time
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Wake up Render service
+        run: |
+          echo "Pinging service to wake it up..."
+          curl -s --max-time 60 "${{ secrets.APP_URL }}" > /dev/null || true
+          echo "Waiting 40s for service to fully start..."
+          sleep 40
+
+      - name: Run weekly tools update
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" \
+            --max-time 120 \
+            -X POST "${{ secrets.APP_URL }}/api/cron/update" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json")
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+
+          echo "=== Update Result ==="
+          echo "Status: $HTTP_CODE"
+          echo "Body: $BODY"
+
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::Update failed with HTTP $HTTP_CODE"
+            exit 1
+          fi
+
+          echo "Weekly update completed successfully"

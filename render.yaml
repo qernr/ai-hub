@@ -20,3 +20,5 @@ services:
         value: https://findyorpersonalai.onrender.com
       - key: ANTHROPIC_API_KEY
         sync: false
+      - key: CRON_SECRET
+        sync: false

@@ -29,13 +29,14 @@ export async function POST(req: Request) {
   })
 
   const results: { slug: string; status: string; error?: string }[] = []
+  let aiDisabled = false
 
   for (const tool of tools) {
     try {
       const existing = (tool.translations ?? {}) as ToolTranslations
       let ruTranslation = existing.ru ?? {}
 
-      if (client) {
+      if (client && !aiDisabled) {
         const message = await client.messages.create({
           model: 'claude-haiku-4-5-20251001',
           max_tokens: 600,
@@ -71,21 +72,33 @@ Return ONLY valid JSON (no markdown):
         where: { id: tool.id },
         data: {
           translations: { ...existing, ru: ruTranslation },
+          updatedAt: new Date(),
         },
       })
 
-      results.push({ slug: tool.slug, status: client ? 'ai-refreshed' : 'touched' })
+      results.push({ slug: tool.slug, status: client && !aiDisabled ? 'ai-refreshed' : 'touched' })
     } catch (err) {
-      results.push({ slug: tool.slug, status: 'error', error: String(err) })
+      const errMsg = String(err)
+      // If out of credits or auth error — disable AI for remaining tools in this run
+      if (errMsg.includes('credit balance') || errMsg.includes('invalid_request_error') || errMsg.includes('authentication')) {
+        aiDisabled = true
+        // Still touch the tool (update updatedAt) to keep rotation going
+        await prisma.tool.update({ where: { id: tool.id }, data: { updatedAt: new Date() } }).catch(() => null)
+        results.push({ slug: tool.slug, status: 'skipped-no-credits' })
+      } else {
+        results.push({ slug: tool.slug, status: 'error', error: errMsg })
+      }
     }
   }
 
+  const allSkipped = results.every(r => r.status === 'skipped-no-credits')
   const summary = {
-    success: true,
+    success: !allSkipped,
     timestamp: new Date().toISOString(),
     processed: results.length,
-    aiEnabled: !!client,
+    aiEnabled: !!client && !aiDisabled,
     results,
+    ...(allSkipped && { warning: 'Anthropic API credits exhausted. Top up at console.anthropic.com' }),
   }
 
   console.log('[cron/update]', JSON.stringify(summary))

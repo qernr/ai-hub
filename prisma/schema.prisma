@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PricingType {
+  FREE
+  FREEMIUM
+  PAID
+}
+
+model Category {
+  id          String         @id @default(cuid())
+  name        String
+  slug        String         @unique
+  description String?
+  icon        String?
+  createdAt   DateTime       @default(now())
+  tools       ToolCategory[]
+}
+
+model Tool {
+  id                String         @id @default(cuid())
+  name              String
+  slug              String         @unique
+  logo              String?
+  websiteUrl        String
+  description       String
+  pricingType       PricingType    @default(FREEMIUM)
+  pros              String[]
+  cons              String[]
+  alternatives      String[]
+  usageInstructions String?
+  translations      Json?
+  featured          Boolean        @default(false)
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  categories        ToolCategory[]
+}
+
+model ToolCategory {
+  toolId     String
+  categoryId String
+  tool       Tool     @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([toolId, categoryId])
+}

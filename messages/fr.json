@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "Catégories", "explore": "Explorer", "support": "Soutenir", "search": "Chercher des outils" },
+  "home": {
+    "badge": "35+ outils IA en un seul endroit",
+    "title": "Trouvez l'outil IA parfait",
+    "highlight": "pour chaque tâche",
+    "subtitle": "Recherchez et comparez les meilleurs outils IA. Décrivez vos besoins et trouvez le bon outil en secondes.",
+    "placeholder": "Décrivez vos besoins...",
+    "tryLabel": "Essayez :",
+    "example1": "IA pour générer des images",
+    "example2": "Assistant de code gratuit",
+    "example3": "IA pour traduire des documents",
+    "example4": "Outil de synthèse vocale",
+    "example5": "IA pour les présentations",
+    "browseCategories": "Parcourir par catégorie",
+    "browseCategoriesDesc": "Trouvez des outils IA organisés par fonction",
+    "viewAll": "Voir tout",
+    "featured": "Outils en vedette",
+    "featuredDesc": "Outils IA plébiscités par des millions",
+    "browseAll": "Voir tout",
+    "recent": "Récemment ajoutés",
+    "recentDesc": "Les derniers outils IA dans notre annuaire",
+    "seeAll": "Voir tous les outils",
+    "ctaTitle": "Vous ne trouvez pas le bon outil ?",
+    "ctaDesc": "Utilisez notre recherche pour filtrer par catégorie, prix et plus.",
+    "ctaBtn": "Explorer tous les outils IA"
+  },
+  "search": {
+    "title": "Explorer les outils IA",
+    "desc": "Recherchez et filtrez pour trouver l'outil parfait",
+    "placeholder": "Rechercher des outils IA...",
+    "toolsFound": "{count} outils trouvés",
+    "toolFound": "{count} outil trouvé",
+    "noResults": "Aucun outil trouvé",
+    "noResultsQuery": "Aucun outil pour \"{query}\". Essayez d'autres mots.",
+    "noResultsFilter": "Aucun outil ne correspond aux filtres.",
+    "clearFilters": "Effacer les filtres",
+    "allCategories": "Toutes les catégories",
+    "allPricing": "Tous les prix",
+    "searchBtn": "Rechercher"
+  },
+  "pricing": { "FREE": "Gratuit", "FREEMIUM": "Freemium", "PAID": "Payant" },
+  "tool": {
+    "visitWebsite": "Visiter le site", "backToTools": "Retour", "about": "À propos de",
+    "prosAndCons": "Avantages et inconvénients", "pros": "Avantages", "cons": "Inconvénients",
+    "howToUse": "Comment utiliser", "alternatives": "Alternatives à",
+    "alternativesDesc": "Outils similaires à considérer",
+    "featured": "En vedette", "details": "Détails", "visit": "Visiter", "lastUpdated": "Mis à jour"
+  },
+  "categories": { "title": "Catégories d'outils IA", "desc": "Parcourez {count} catégories", "tools": "outils", "tool": "outil" },
+  "support": {
+    "title": "Soutenir AI Hub", "subtitle": "AI Hub est un projet gratuit. Votre soutien nous aide à grandir.",
+    "whatEnables": "Ce que permet votre soutien",
+    "benefit1Title": "Plus d'outils", "benefit1Desc": "Ajouter plus d'outils régulièrement",
+    "benefit2Title": "Meilleures critiques", "benefit2Desc": "Tester les outils premium en profondeur",
+    "benefit3Title": "Mises à jour", "benefit3Desc": "Garder les informations à jour",
+    "benefit4Title": "Gratuit pour tous", "benefit4Desc": "Garder AI Hub gratuit",
+    "donateTitle": "Faire un don via DonationAlerts", "donateDesc": "Chaque contribution aide. Merci !",
+    "donateBtn": "Soutenir sur DonationAlerts",
+    "otherWays": "Autres façons de soutenir",
+    "share": "Partagez AI Hub avec vos amis", "recommend": "Recommandez-nous sur les réseaux sociaux",
+    "report": "Signalez des informations obsolètes", "suggest": "Suggérez de nouveaux outils",
+    "madeWith": "Fait avec ❤️ par l'équipe AI Hub"
+  },
+  "footer": {
+    "tagline": "Trouvez l'outil IA parfait pour chaque tâche.",
+    "categoriesTitle": "Catégories", "popularTitle": "Populaire", "siteTitle": "Site",
+    "exploreAll": "Explorer tout", "supportUs": "Soutenir",
+    "rights": "Tous droits réservés.", "madeWith": "Fait avec ❤️ pour la communauté IA"
+  }
+}

@@ -1,0 +1,55 @@
+
+> ai-hub@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.0.3
+   - Local:        http://localhost:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1756ms
+ ✓ Compiled /middleware in 372ms (110 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 3.7s (1058 modules)
+ ✓ Compiled in 266ms (473 modules)
+ GET / 200 in 4544ms
+ GET / 200 in 41ms
+ ✓ Compiled /[locale]/search in 429ms (1069 modules)
+ GET /search 200 in 1039ms
+ ✓ Compiled /[locale]/categories in 169ms (1074 modules)
+ GET /categories 200 in 715ms
+ ✓ Compiled /[locale]/tools/[slug] in 267ms (1105 modules)
+ GET /tools/chatgpt 200 in 886ms
+ ✓ Compiled /[locale]/categories/[slug] in 206ms (1111 modules)
+ GET /categories/image-generation 200 in 784ms
+ ✓ Compiled /[locale]/support in 209ms (1121 modules)
+ GET /support 200 in 729ms
+ GET /ru 200 in 46ms
+ GET /ru/search 200 in 47ms
+ GET /ru/categories 200 in 27ms
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 607ms (1157 modules)
+ GET /admin/login 200 in 696ms
+ GET / 200 in 94ms
+ GET /ru 200 in 30ms
+ GET / 200 in 35ms
+ GET /ru 200 in 30ms
+ GET /es 200 in 30ms
+ GET /fr 200 in 31ms
+ GET /de 200 in 28ms
+ GET /ja 200 in 27ms
+ GET /zh 200 in 30ms
+ GET /ar 200 in 26ms
+ GET /ru/tools/chatgpt 200 in 38ms
+ GET /ru/categories/chatbots 200 in 35ms
+ GET /ru/categories/chatbots 200 in 32ms
+ GET /pt/categories/chatbots 200 in 21ms
+ GET /ru/categories/chatbots 200 in 16ms
+ GET /ru/tools/claude 200 in 17ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.0.3
+   - Local:        http://localhost:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 2.2s

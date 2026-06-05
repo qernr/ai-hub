@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "Kategoriler", "explore": "Keşfet", "support": "Destek Ol", "search": "Araç ara" },
+  "home": {
+    "badge": "35+ yapay zeka aracı tek yerde",
+    "title": "Mükemmel yapay zeka aracını bul",
+    "highlight": "her görev için",
+    "subtitle": "Dünyanın en iyi yapay zeka araçlarını ara ve karşılaştır. Ne ihtiyacın olduğunu açıkla, saniyeler içinde bul.",
+    "placeholder": "Ne ihtiyacın olduğunu açıkla...",
+    "tryLabel": "Dene:",
+    "example1": "Görsel oluşturmak için yapay zeka",
+    "example2": "Ücretsiz kodlama asistanı",
+    "example3": "Belge çevirisi için yapay zeka",
+    "example4": "Metinden sese dönüştürme",
+    "example5": "Sunum oluşturmak için yapay zeka",
+    "browseCategories": "Kategoriye göre gözat",
+    "browseCategoriesDesc": "İşlevlerine göre düzenlenmiş yapay zeka araçları",
+    "viewAll": "Tümünü gör",
+    "featured": "Öne Çıkan Araçlar",
+    "featuredDesc": "Milyonlarca kişinin sevdiği yapay zeka araçları",
+    "browseAll": "Tümüne gözat",
+    "recent": "Son Eklenenler",
+    "recentDesc": "Dizinimizdeki en son yapay zeka araçları",
+    "seeAll": "Tüm araçları gör",
+    "ctaTitle": "Doğru aracı bulamıyor musun?",
+    "ctaDesc": "Kategori, fiyat ve daha fazlasına göre filtrelemek için güçlü arama özelliğini kullan.",
+    "ctaBtn": "Tüm yapay zeka araçlarını keşfet"
+  },
+  "search": {
+    "title": "Yapay Zeka Araçlarını Keşfet",
+    "desc": "Mükemmel yapay zeka aracını bulmak için ara ve filtrele",
+    "placeholder": "Yapay zeka araçlarını ara...",
+    "toolsFound": "{count} araç bulundu",
+    "toolFound": "{count} araç bulundu",
+    "noResults": "Araç bulunamadı",
+    "noResultsQuery": "\"{query}\" için araç bulunamadı. Farklı kelimeler dene.",
+    "noResultsFilter": "Filtrelerle eşleşen araç yok.",
+    "clearFilters": "Filtreleri temizle",
+    "allCategories": "Tüm Kategoriler",
+    "allPricing": "Tüm Fiyatlar",
+    "searchBtn": "Ara"
+  },
+  "pricing": { "FREE": "Ücretsiz", "FREEMIUM": "Freemium", "PAID": "Ücretli" },
+  "tool": {
+    "visitWebsite": "Web sitesini ziyaret et", "backToTools": "Araçlara dön", "about": "Hakkında",
+    "prosAndCons": "Artılar ve eksiler", "pros": "Artılar", "cons": "Eksiler",
+    "howToUse": "Nasıl kullanılır", "alternatives": "Alternatifleri",
+    "alternativesDesc": "Değerlendirilebilecek benzer araçlar",
+    "featured": "Öne Çıkan", "details": "Detaylar", "visit": "Ziyaret", "lastUpdated": "Güncellendi"
+  },
+  "categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
+  "support": {
+    "title": "AI Hub'ı Destekle", "subtitle": "AI Hub ücretsiz bir projedir. Desteğin büyümemize yardımcı olur.",
+    "whatEnables": "Desteğin ne sağlar",
+    "benefit1Title": "Daha fazla araç", "benefit1Desc": "Düzenli olarak daha fazla araç ekle",
+    "benefit2Title": "Daha iyi incelemeler", "benefit2Desc": "Premium araçları derinlemesine test et",
+    "benefit3Title": "Düzenli güncellemeler", "benefit3Desc": "Bilgileri güncel tut",
+    "benefit4Title": "Herkes için ücretsiz", "benefit4Desc": "AI Hub'ı ücretsiz tut",
+    "donateTitle": "DonationAlerts ile bağış yap", "donateDesc": "Her katkı yardımcı olur. Teşekkürler!",
+    "donateBtn": "DonationAlerts'te destek ol",
+    "otherWays": "Diğer destek yolları",
+    "share": "AI Hub'ı arkadaşlarınla paylaş", "recommend": "Bizi sosyal medyada tavsiye et",
+    "report": "Eski bilgileri bildir", "suggest": "Yeni araçlar öner",
+    "madeWith": "AI Hub ekibi tarafından ❤️ ile yapıldı"
+  },
+  "footer": {
+    "tagline": "Her görev için mükemmel yapay zeka aracını bul.",
+    "categoriesTitle": "Kategoriler", "popularTitle": "Popüler", "siteTitle": "Site",
+    "exploreAll": "Tümünü keşfet", "supportUs": "Destek Ol",
+    "rights": "Tüm hakları saklıdır.", "madeWith": "Yapay zeka topluluğu için ❤️ ile yapıldı"
+  }
+}

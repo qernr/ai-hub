@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "カテゴリ", "explore": "探す", "support": "サポート", "search": "ツールを検索" },
+  "home": {
+    "badge": "35以上のAIツールが一箇所に",
+    "title": "完璧なAIツールを見つけよう",
+    "highlight": "あらゆるタスクに",
+    "subtitle": "世界最高のAIツールを検索・比較。必要なものを説明すれば、数秒で最適なAIが見つかります。",
+    "placeholder": "必要なものを説明してください...",
+    "tryLabel": "例えば：",
+    "example1": "画像生成AIが必要",
+    "example2": "無料のコードアシスタント",
+    "example3": "文書翻訳AI",
+    "example4": "テキスト読み上げツール",
+    "example5": "プレゼン作成AI",
+    "browseCategories": "カテゴリで探す",
+    "browseCategoriesDesc": "機能別に整理されたAIツール",
+    "viewAll": "すべて見る",
+    "featured": "注目ツール",
+    "featuredDesc": "何百万人に愛されるAIツール",
+    "browseAll": "すべて閲覧",
+    "recent": "最近追加",
+    "recentDesc": "ディレクトリの最新AIツール",
+    "seeAll": "全ツールを見る",
+    "ctaTitle": "適切なツールが見つからない？",
+    "ctaDesc": "強力な検索でカテゴリ・価格などで絞り込む。",
+    "ctaBtn": "全AIツールを探す"
+  },
+  "search": {
+    "title": "AIツールを探す",
+    "desc": "絞り込んで最適なAIツールを見つける",
+    "placeholder": "AIツールを検索...",
+    "toolsFound": "{count}件のツールが見つかりました",
+    "toolFound": "{count}件のツールが見つかりました",
+    "noResults": "ツールが見つかりません",
+    "noResultsQuery": "「{query}」に一致するツールがありません。",
+    "noResultsFilter": "フィルターに一致するツールがありません。",
+    "clearFilters": "フィルターをクリア",
+    "allCategories": "全カテゴリ",
+    "allPricing": "全価格帯",
+    "searchBtn": "検索"
+  },
+  "pricing": { "FREE": "無料", "FREEMIUM": "フリーミアム", "PAID": "有料" },
+  "tool": {
+    "visitWebsite": "サイトを訪問", "backToTools": "ツールに戻る", "about": "について",
+    "prosAndCons": "長所と短所", "pros": "長所", "cons": "短所",
+    "howToUse": "使い方", "alternatives": "の代替ツール",
+    "alternativesDesc": "検討すべき類似ツール",
+    "featured": "注目", "details": "詳細", "visit": "訪問", "lastUpdated": "更新日"
+  },
+  "categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
+  "support": {
+    "title": "AI Hubをサポート", "subtitle": "AI Hubは無料プロジェクトです。サポートが成長を助けます。",
+    "whatEnables": "サポートで実現できること",
+    "benefit1Title": "より多くのツール", "benefit1Desc": "定期的に新しいツールを追加",
+    "benefit2Title": "より良いレビュー", "benefit2Desc": "プレミアムツールの徹底テスト",
+    "benefit3Title": "定期更新", "benefit3Desc": "情報を最新に保つ",
+    "benefit4Title": "全員無料", "benefit4Desc": "AI Hubを無料に保つ",
+    "donateTitle": "DonationAlertsで寄付", "donateDesc": "あらゆる貢献が助けになります。ありがとう！",
+    "donateBtn": "DonationAlertsでサポート",
+    "otherWays": "その他のサポート方法",
+    "share": "友人にAI Hubをシェア", "recommend": "SNSで推薦",
+    "report": "古い情報を報告", "suggest": "新しいツールを提案",
+    "madeWith": "AI Hubチームが❤️を込めて作成"
+  },
+  "footer": {
+    "tagline": "あらゆるタスクに最適なAIツールを見つけよう。",
+    "categoriesTitle": "カテゴリ", "popularTitle": "人気", "siteTitle": "サイト",
+    "exploreAll": "すべて探す", "supportUs": "サポート",
+    "rights": "全著作権所有。", "madeWith": "AIコミュニティのために❤️を込めて"
+  }
+}

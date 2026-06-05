@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "Kategorien", "explore": "Entdecken", "support": "Unterstützen", "search": "Tools suchen" },
+  "home": {
+    "badge": "35+ KI-Tools an einem Ort",
+    "title": "Finden Sie das perfekte KI-Tool",
+    "highlight": "für jede Aufgabe",
+    "subtitle": "Suchen und vergleichen Sie die besten KI-Tools. Beschreiben Sie, was Sie brauchen, und finden Sie die richtige KI in Sekunden.",
+    "placeholder": "Beschreiben Sie Ihren Bedarf...",
+    "tryLabel": "Probieren Sie:",
+    "example1": "KI für Bildgenerierung",
+    "example2": "Kostenloser Code-Assistent",
+    "example3": "KI für Dokumentenübersetzung",
+    "example4": "Text-zu-Sprache-Tool",
+    "example5": "KI für Präsentationen",
+    "browseCategories": "Nach Kategorie durchsuchen",
+    "browseCategoriesDesc": "KI-Tools nach Funktion organisiert",
+    "viewAll": "Alle anzeigen",
+    "featured": "Empfohlene Tools",
+    "featuredDesc": "Von Millionen geliebte KI-Tools",
+    "browseAll": "Alle durchsuchen",
+    "recent": "Kürzlich hinzugefügt",
+    "recentDesc": "Die neuesten KI-Tools in unserem Verzeichnis",
+    "seeAll": "Alle Tools anzeigen",
+    "ctaTitle": "Können Sie das richtige Tool nicht finden?",
+    "ctaDesc": "Verwenden Sie unsere Suche, um nach Kategorie, Preis und mehr zu filtern.",
+    "ctaBtn": "Alle KI-Tools entdecken"
+  },
+  "search": {
+    "title": "KI-Tools entdecken",
+    "desc": "Suchen und filtern Sie, um das perfekte KI-Tool zu finden",
+    "placeholder": "KI-Tools suchen...",
+    "toolsFound": "{count} Tools gefunden",
+    "toolFound": "{count} Tool gefunden",
+    "noResults": "Keine Tools gefunden",
+    "noResultsQuery": "Keine KI-Tools für \"{query}\". Versuchen Sie andere Schlüsselwörter.",
+    "noResultsFilter": "Keine Tools entsprechen Ihren Filtern.",
+    "clearFilters": "Filter löschen",
+    "allCategories": "Alle Kategorien",
+    "allPricing": "Alle Preise",
+    "searchBtn": "Suchen"
+  },
+  "pricing": { "FREE": "Kostenlos", "FREEMIUM": "Freemium", "PAID": "Kostenpflichtig" },
+  "tool": {
+    "visitWebsite": "Website besuchen", "backToTools": "Zurück", "about": "Über",
+    "prosAndCons": "Vor- und Nachteile", "pros": "Vorteile", "cons": "Nachteile",
+    "howToUse": "Verwendung", "alternatives": "Alternativen zu",
+    "alternativesDesc": "Ähnliche Tools, die Sie in Betracht ziehen sollten",
+    "featured": "Empfohlen", "details": "Details", "visit": "Besuchen", "lastUpdated": "Aktualisiert"
+  },
+  "categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
+  "support": {
+    "title": "AI Hub unterstützen", "subtitle": "AI Hub ist ein kostenloses Projekt. Ihre Unterstützung hilft uns zu wachsen.",
+    "whatEnables": "Was Ihre Unterstützung ermöglicht",
+    "benefit1Title": "Mehr Tools", "benefit1Desc": "Mehr Tools regelmäßig hinzufügen",
+    "benefit2Title": "Bessere Bewertungen", "benefit2Desc": "Premium-Tools gründlich testen",
+    "benefit3Title": "Regelmäßige Updates", "benefit3Desc": "Informationen aktuell halten",
+    "benefit4Title": "Kostenlos für alle", "benefit4Desc": "AI Hub kostenlos halten",
+    "donateTitle": "Spenden über DonationAlerts", "donateDesc": "Jeder Beitrag hilft. Danke!",
+    "donateBtn": "Auf DonationAlerts unterstützen",
+    "otherWays": "Andere Unterstützungsmöglichkeiten",
+    "share": "AI Hub mit Freunden teilen", "recommend": "Uns in sozialen Medien empfehlen",
+    "report": "Veraltete Informationen melden", "suggest": "Neue Tools vorschlagen",
+    "madeWith": "Mit ❤️ vom AI Hub-Team gemacht"
+  },
+  "footer": {
+    "tagline": "Finden Sie das perfekte KI-Tool für jede Aufgabe.",
+    "categoriesTitle": "Kategorien", "popularTitle": "Beliebt", "siteTitle": "Seite",
+    "exploreAll": "Alles erkunden", "supportUs": "Unterstützen",
+    "rights": "Alle Rechte vorbehalten.", "madeWith": "Mit ❤️ für die KI-Community"
+  }
+}

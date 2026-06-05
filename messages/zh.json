@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "分类", "explore": "探索", "support": "支持我们", "search": "搜索工具" },
+  "home": {
+    "badge": "35+ AI工具一站式",
+    "title": "找到完美的AI工具",
+    "highlight": "满足任何需求",
+    "subtitle": "搜索并比较全球最佳AI工具。描述您的需求，秒速找到合适的AI。",
+    "placeholder": "描述您的需求...",
+    "tryLabel": "试试：",
+    "example1": "需要AI生成图像",
+    "example2": "免费代码助手",
+    "example3": "文档翻译AI",
+    "example4": "文字转语音工具",
+    "example5": "AI演示文稿制作",
+    "browseCategories": "按分类浏览",
+    "browseCategoriesDesc": "按功能组织的AI工具",
+    "viewAll": "查看全部",
+    "featured": "精选工具",
+    "featuredDesc": "数百万人喜爱的AI工具",
+    "browseAll": "浏览全部",
+    "recent": "最近添加",
+    "recentDesc": "目录中最新的AI工具",
+    "seeAll": "查看所有工具",
+    "ctaTitle": "找不到合适的工具？",
+    "ctaDesc": "使用强大的搜索按分类、价格等筛选。",
+    "ctaBtn": "探索所有AI工具"
+  },
+  "search": {
+    "title": "探索AI工具",
+    "desc": "搜索和筛选以找到完美的AI工具",
+    "placeholder": "搜索AI工具...",
+    "toolsFound": "找到{count}个工具",
+    "toolFound": "找到{count}个工具",
+    "noResults": "未找到工具",
+    "noResultsQuery": "没有匹配\"{query}\"的工具。请尝试其他关键词。",
+    "noResultsFilter": "没有工具符合您的筛选条件。",
+    "clearFilters": "清除筛选",
+    "allCategories": "所有分类",
+    "allPricing": "所有价格",
+    "searchBtn": "搜索"
+  },
+  "pricing": { "FREE": "免费", "FREEMIUM": "免费增值", "PAID": "付费" },
+  "tool": {
+    "visitWebsite": "访问网站", "backToTools": "返回工具", "about": "关于",
+    "prosAndCons": "优缺点", "pros": "优点", "cons": "缺点",
+    "howToUse": "使用方法", "alternatives": "的替代品",
+    "alternativesDesc": "值得考虑的类似工具",
+    "featured": "精选", "details": "详情", "visit": "访问", "lastUpdated": "更新时间"
+  },
+  "categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
+  "support": {
+    "title": "支持AI Hub", "subtitle": "AI Hub是免费项目，您的支持帮助我们成长。",
+    "whatEnables": "您的支持能实现什么",
+    "benefit1Title": "更多工具", "benefit1Desc": "定期添加更多工具",
+    "benefit2Title": "更好的评测", "benefit2Desc": "深度测试高级工具",
+    "benefit3Title": "定期更新", "benefit3Desc": "保持信息最新",
+    "benefit4Title": "免费给所有人", "benefit4Desc": "保持AI Hub免费",
+    "donateTitle": "通过DonationAlerts捐赠", "donateDesc": "每一份贡献都有帮助，谢谢！",
+    "donateBtn": "在DonationAlerts上支持",
+    "otherWays": "其他支持方式",
+    "share": "与朋友分享AI Hub", "recommend": "在社交媒体推荐我们",
+    "report": "举报过时信息", "suggest": "建议新工具",
+    "madeWith": "AI Hub团队用❤️制作"
+  },
+  "footer": {
+    "tagline": "找到满足任何需求的完美AI工具。",
+    "categoriesTitle": "分类", "popularTitle": "热门", "siteTitle": "网站",
+    "exploreAll": "探索全部", "supportUs": "支持我们",
+    "rights": "版权所有。", "madeWith": "为AI社区用❤️制作"
+  }
+}

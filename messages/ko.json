@@ -1,0 +1,71 @@
+{
+  "nav": { "categories": "카테고리", "explore": "탐색", "support": "후원", "search": "도구 검색" },
+  "home": {
+    "badge": "한 곳에서 35개 이상의 AI 도구",
+    "title": "완벽한 AI 도구를 찾아보세요",
+    "highlight": "모든 작업에",
+    "subtitle": "세계 최고의 AI 도구를 검색하고 비교하세요. 필요한 것을 설명하면 몇 초 안에 맞는 AI를 찾을 수 있습니다.",
+    "placeholder": "필요한 것을 설명하세요...",
+    "tryLabel": "예시:",
+    "example1": "이미지 생성 AI 필요",
+    "example2": "무료 코딩 어시스턴트",
+    "example3": "문서 번역 AI",
+    "example4": "텍스트 음성 변환 도구",
+    "example5": "프레젠테이션 제작 AI",
+    "browseCategories": "카테고리별 탐색",
+    "browseCategoriesDesc": "기능별로 정리된 AI 도구 찾기",
+    "viewAll": "전체 보기",
+    "featured": "추천 도구",
+    "featuredDesc": "수백만 명이 사랑하는 AI 도구",
+    "browseAll": "전체 탐색",
+    "recent": "최근 추가됨",
+    "recentDesc": "디렉토리의 최신 AI 도구",
+    "seeAll": "모든 도구 보기",
+    "ctaTitle": "적합한 도구를 찾지 못했나요?",
+    "ctaDesc": "강력한 검색으로 카테고리, 가격 등으로 필터링하세요.",
+    "ctaBtn": "모든 AI 도구 탐색"
+  },
+  "search": {
+    "title": "AI 도구 탐색",
+    "desc": "검색하고 필터링하여 완벽한 AI 도구를 찾으세요",
+    "placeholder": "AI 도구 검색...",
+    "toolsFound": "{count}개 도구 발견",
+    "toolFound": "{count}개 도구 발견",
+    "noResults": "도구를 찾을 수 없음",
+    "noResultsQuery": "\"{query}\"와 일치하는 도구가 없습니다.",
+    "noResultsFilter": "필터에 맞는 도구가 없습니다.",
+    "clearFilters": "필터 초기화",
+    "allCategories": "모든 카테고리",
+    "allPricing": "모든 가격",
+    "searchBtn": "검색"
+  },
+  "pricing": { "FREE": "무료", "FREEMIUM": "프리미엄", "PAID": "유료" },
+  "tool": {
+    "visitWebsite": "웹사이트 방문", "backToTools": "도구로 돌아가기", "about": "정보",
+    "prosAndCons": "장단점", "pros": "장점", "cons": "단점",
+    "howToUse": "사용 방법", "alternatives": "대안",
+    "alternativesDesc": "고려할 만한 유사 도구",
+    "featured": "추천", "details": "자세히", "visit": "방문", "lastUpdated": "업데이트"
+  },
+  "categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
+  "support": {
+    "title": "AI Hub 후원", "subtitle": "AI Hub는 무료 프로젝트입니다. 후원이 성장에 도움됩니다.",
+    "whatEnables": "후원으로 가능한 것",
+    "benefit1Title": "더 많은 도구", "benefit1Desc": "정기적으로 더 많은 도구 추가",
+    "benefit2Title": "더 나은 리뷰", "benefit2Desc": "프리미엄 도구 심층 테스트",
+    "benefit3Title": "정기 업데이트", "benefit3Desc": "정보 최신 유지",
+    "benefit4Title": "모두에게 무료", "benefit4Desc": "AI Hub 무료 유지",
+    "donateTitle": "DonationAlerts로 기부", "donateDesc": "모든 기여가 도움됩니다. 감사합니다!",
+    "donateBtn": "DonationAlerts에서 후원",
+    "otherWays": "다른 지원 방법",
+    "share": "친구와 AI Hub 공유", "recommend": "소셜 미디어에서 추천",
+    "report": "오래된 정보 신고", "suggest": "새 도구 제안",
+    "madeWith": "AI Hub 팀이 ❤️로 만듦"
+  },
+  "footer": {
+    "tagline": "모든 작업에 완벽한 AI 도구를 찾아보세요.",
+    "categoriesTitle": "카테고리", "popularTitle": "인기", "siteTitle": "사이트",
+    "exploreAll": "전체 탐색", "supportUs": "후원",
+    "rights": "모든 권리 보유.", "madeWith": "AI 커뮤니티를 위해 ❤️로 만듦"
+  }
+}

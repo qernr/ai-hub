@@ -11,10 +11,10 @@ services:
       - key: NODE_VERSION
         value: 20.18.0
       - key: DATABASE_URL
-        sync: false
+        value: postgresql://neondb_owner:npg_brnz0MCTZR1m@ep-fancy-rice-ajm07gbu.c-3.us-east-2.aws.neon.tech/neondb?sslmode=require
       - key: ADMIN_PASSWORD
-        sync: false
+        value: admin123
       - key: SESSION_SECRET
-        sync: false
+        value: aihub-prod-secret-render-min32chars-secure
       - key: NEXT_PUBLIC_APP_URL
-        sync: false
+        value: https://findyorpersonalai.onrender.com

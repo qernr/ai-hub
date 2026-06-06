@@ -56,7 +56,8 @@
     "compareSelected": "Comparer",
     "clearComparison": "Vider",
     "comparisonBar": "Comparaison",
-    "addMoreToCompare": "Ajoutez des outils (max 4)"
+    "addMoreToCompare": "Ajoutez des outils (max 4)",
+    "compareNav": "Comparer", "compareTitle": "Comparer les outils IA", "compareToolsCount": "outils", "bestChoice": "Meilleur choix"
   },
   "categories": { "title": "Catégories d'outils IA", "desc": "Parcourez {count} catégories", "tools": "outils", "tool": "outil" },
   "support": {

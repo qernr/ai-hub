@@ -56,7 +56,8 @@
     "compareSelected": "比较",
     "clearComparison": "清空",
     "comparisonBar": "比较",
-    "addMoreToCompare": "添加更多工具（最多4个）"
+    "addMoreToCompare": "添加更多工具（最多4个）",
+    "compareNav": "比较", "compareTitle": "比较AI工具", "compareToolsCount": "工具", "bestChoice": "最佳选择"
   },
   "categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
   "support": {

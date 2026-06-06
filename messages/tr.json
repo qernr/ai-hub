@@ -56,7 +56,8 @@
     "compareSelected": "Karşılaştır",
     "clearComparison": "Temizle",
     "comparisonBar": "Karşılaştırma",
-    "addMoreToCompare": "Daha fazla araç ekle (maks. 4)"
+    "addMoreToCompare": "Daha fazla araç ekle (maks. 4)",
+    "compareNav": "Karşılaştır", "compareTitle": "AI Araçlarını Karşılaştır", "compareToolsCount": "araç", "bestChoice": "En iyi seçim"
   },
   "categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
   "support": {

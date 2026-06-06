@@ -73,7 +73,11 @@
     "compareSelected": "Сравнить",
     "clearComparison": "Очистить",
     "comparisonBar": "Сравнение",
-    "addMoreToCompare": "Добавьте ещё инструменты (макс. 4)"
+    "addMoreToCompare": "Добавьте ещё инструменты (макс. 4)",
+    "compareNav": "Сравнение",
+    "compareTitle": "Сравнение нейросетей",
+    "compareToolsCount": "инструм.",
+    "bestChoice": "Лучший выбор"
   },
   "categories": {
     "title": "Категории ИИ-инструментов",

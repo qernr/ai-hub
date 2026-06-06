@@ -73,7 +73,11 @@
     "compareSelected": "Compare",
     "clearComparison": "Clear",
     "comparisonBar": "Compare",
-    "addMoreToCompare": "Add more tools to compare (max 4)"
+    "addMoreToCompare": "Add more tools to compare (max 4)",
+    "compareNav": "Compare",
+    "compareTitle": "Compare AI Tools",
+    "compareToolsCount": "tools",
+    "bestChoice": "Best choice"
   },
   "categories": {
     "title": "AI Tool Categories",

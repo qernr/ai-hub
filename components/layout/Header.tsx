@@ -6,6 +6,7 @@ import { Brain, Menu, X, Search } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/layout/ThemeToggle'
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
+import { CompareNavButton } from '@/components/tools/CompareNavButton'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Link } from '@/i18n/navigation'
@@ -18,7 +19,6 @@ export function Header() {
   const navLinks = [
     { href: '/categories' as const, label: t('categories') },
     { href: '/search' as const, label: t('explore') },
-    { href: '/support' as const, label: t('support') },
   ]
 
   return (
@@ -49,6 +49,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          <CompareNavButton />
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
@@ -100,6 +101,9 @@ export function Header() {
               {t('search')}
             </Button>
           </Link>
+          <div onClick={() => setMenuOpen(false)}>
+            <CompareNavButton />
+          </div>
         </div>
       )}
     </header>

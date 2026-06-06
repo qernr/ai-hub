@@ -56,7 +56,8 @@
     "compareSelected": "Vergleichen",
     "clearComparison": "Leeren",
     "comparisonBar": "Vergleich",
-    "addMoreToCompare": "Weitere Tools hinzufügen (max. 4)"
+    "addMoreToCompare": "Weitere Tools hinzufügen (max. 4)",
+    "compareNav": "Vergleich", "compareTitle": "KI-Tools vergleichen", "compareToolsCount": "Tools", "bestChoice": "Beste Wahl"
   },
   "categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
   "support": {

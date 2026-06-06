@@ -56,7 +56,8 @@
     "compareSelected": "مقارنة",
     "clearComparison": "مسح",
     "comparisonBar": "المقارنة",
-    "addMoreToCompare": "أضف المزيد من الأدوات (الحد الأقصى 4)"
+    "addMoreToCompare": "أضف المزيد من الأدوات (الحد الأقصى 4)",
+    "compareNav": "المقارنة", "compareTitle": "مقارنة أدوات الذكاء الاصطناعي", "compareToolsCount": "أدوات", "bestChoice": "أفضل اختيار"
   },
   "categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
   "support": {

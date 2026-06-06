@@ -56,7 +56,8 @@
     "compareSelected": "비교",
     "clearComparison": "지우기",
     "comparisonBar": "비교",
-    "addMoreToCompare": "도구 추가 (최대 4개)"
+    "addMoreToCompare": "도구 추가 (최대 4개)",
+    "compareNav": "비교", "compareTitle": "AI 도구 비교", "compareToolsCount": "도구", "bestChoice": "최선의 선택"
   },
   "categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
   "support": {

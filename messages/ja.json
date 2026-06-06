@@ -56,7 +56,8 @@
     "compareSelected": "比較",
     "clearComparison": "クリア",
     "comparisonBar": "比較",
-    "addMoreToCompare": "ツールを追加（最大4件）"
+    "addMoreToCompare": "ツールを追加（最大4件）",
+    "compareNav": "比較", "compareTitle": "AIツールを比較", "compareToolsCount": "件", "bestChoice": "ベストな選択"
   },
   "categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
   "support": {

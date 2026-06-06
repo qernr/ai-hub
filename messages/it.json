@@ -56,7 +56,8 @@
     "compareSelected": "Confronta",
     "clearComparison": "Svuota",
     "comparisonBar": "Confronto",
-    "addMoreToCompare": "Aggiungi altri strumenti (max 4)"
+    "addMoreToCompare": "Aggiungi altri strumenti (max 4)",
+    "compareNav": "Confronta", "compareTitle": "Confronta strumenti AI", "compareToolsCount": "strumenti", "bestChoice": "Scelta migliore"
   },
   "categories": { "title": "Categorie di strumenti AI", "desc": "Sfoglia {count} categorie", "tools": "strumenti", "tool": "strumento" },
   "support": {

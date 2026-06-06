@@ -59,7 +59,20 @@
     "addMoreToCompare": "Daha fazla araç ekle (maks. 4)",
     "compareNav": "Karşılaştır", "compareTitle": "AI Araçlarını Karşılaştır", "compareToolsCount": "araç", "bestChoice": "En iyi seçim"
   },
-  "categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
+    "compare": {
+    "title": "AI Araçlarını Karşılaştır",
+    "subtitle": "Karşılaştırmak için 4 araç ekle",
+    "addTools": "Araç ekle",
+    "searchPlaceholder": "Araç ara...",
+    "selected": "Seçilen",
+    "empty": "Araç seçilmedi",
+    "emptyDesc": "Arama yaparak 4 araç ekle",
+    "addBtn": "Ekle",
+    "added": "Eklendi ✓",
+    "selectAtLeast2": "Karşılaştırmak için en az bir araç daha ekle",
+    "clearAll": "Tümünü temizle",
+    "allTools": "Tüm araçlar"
+  },"categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
   "support": {
     "title": "AI Hub'ı Destekle", "subtitle": "AI Hub ücretsiz bir projedir. Desteğin büyümemize yardımcı olur.",
     "whatEnables": "Desteğin ne sağlar",

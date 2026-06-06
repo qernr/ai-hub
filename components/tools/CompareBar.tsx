@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { useCompare } from '@/hooks/useCompare'
 import { cn, pricingColor } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
+import { usePathname } from '@/i18n/navigation'
 
 export function CompareBar() {
   const t = useTranslations('tool')
@@ -15,6 +16,7 @@ export function CompareBar() {
   const { items, removeTool, clearAll } = useCompare()
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     setMounted(true)
@@ -25,7 +27,7 @@ export function CompareBar() {
 
   useEffect(() => { if (items.length === 0) setOpen(false) }, [items.length])
 
-  if (!mounted || items.length === 0) return null
+  if (!mounted || items.length === 0 || pathname === '/compare') return null
 
   // Calculate score: pros.length - cons.length
   const scores = items.map(t => t.pros.length - t.cons.length)

@@ -59,7 +59,20 @@
     "addMoreToCompare": "ツールを追加（最大4件）",
     "compareNav": "比較", "compareTitle": "AIツールを比較", "compareToolsCount": "件", "bestChoice": "ベストな選択"
   },
-  "categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
+    "compare": {
+    "title": "AIツールを比較",
+    "subtitle": "最大4件のツールを追加して比較",
+    "addTools": "ツールを追加",
+    "searchPlaceholder": "ツールを検索...",
+    "selected": "選択済み",
+    "empty": "ツール未選択",
+    "emptyDesc": "以下から最大4件追加してください",
+    "addBtn": "追加",
+    "added": "追加済み ✓",
+    "selectAtLeast2": "もう1件追加して比較してください",
+    "clearAll": "すべてクリア",
+    "allTools": "全ツール"
+  },"categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
   "support": {
     "title": "AI Hubをサポート", "subtitle": "AI Hubは無料プロジェクトです。サポートが成長を助けます。",
     "whatEnables": "サポートで実現できること",

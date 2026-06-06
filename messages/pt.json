@@ -59,7 +59,20 @@
     "addMoreToCompare": "Adicione mais ferramentas (máx. 4)",
     "compareNav": "Comparar", "compareTitle": "Comparar ferramentas de IA", "compareToolsCount": "ferramentas", "bestChoice": "Melhor escolha"
   },
-  "categories": { "title": "Categorias de IA", "desc": "Navegar por {count} categorias", "tools": "ferramentas", "tool": "ferramenta" },
+    "compare": {
+    "title": "Comparar ferramentas de IA",
+    "subtitle": "Adicione até 4 ferramentas para comparar",
+    "addTools": "Adicionar ferramentas",
+    "searchPlaceholder": "Pesquisar ferramenta...",
+    "selected": "Selecionadas",
+    "empty": "Nenhuma ferramenta selecionada",
+    "emptyDesc": "Pesquise e adicione até 4 ferramentas",
+    "addBtn": "Adicionar",
+    "added": "Adicionado ✓",
+    "selectAtLeast2": "Adicione pelo menos mais uma ferramenta",
+    "clearAll": "Limpar tudo",
+    "allTools": "Todas as ferramentas"
+  },"categories": { "title": "Categorias de IA", "desc": "Navegar por {count} categorias", "tools": "ferramentas", "tool": "ferramenta" },
   "support": {
     "title": "Apoiar AI Hub", "subtitle": "AI Hub é um projeto gratuito. Seu apoio nos ajuda a crescer.",
     "whatEnables": "O que seu apoio permite",

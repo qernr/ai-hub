@@ -79,6 +79,20 @@
     "compareToolsCount": "tools",
     "bestChoice": "Best choice"
   },
+  "compare": {
+    "title": "Compare AI Tools",
+    "subtitle": "Add up to 4 tools to compare side by side",
+    "addTools": "Add tools",
+    "searchPlaceholder": "Search tool...",
+    "selected": "Selected",
+    "empty": "No tools selected",
+    "emptyDesc": "Search and add up to 4 tools below",
+    "addBtn": "Add",
+    "added": "Added ✓",
+    "selectAtLeast2": "Add at least one more tool to compare",
+    "clearAll": "Clear all",
+    "allTools": "All tools"
+  },
   "categories": {
     "title": "AI Tool Categories",
     "desc": "Browse {count} categories of AI tools",

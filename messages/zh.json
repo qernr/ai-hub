@@ -59,7 +59,20 @@
     "addMoreToCompare": "添加更多工具（最多4个）",
     "compareNav": "比较", "compareTitle": "比较AI工具", "compareToolsCount": "工具", "bestChoice": "最佳选择"
   },
-  "categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
+    "compare": {
+    "title": "比较AI工具",
+    "subtitle": "最多添加4个工具进行比较",
+    "addTools": "添加工具",
+    "searchPlaceholder": "搜索工具...",
+    "selected": "已选择",
+    "empty": "未选择工具",
+    "emptyDesc": "在下方搜索并添加最多4个工具",
+    "addBtn": "添加",
+    "added": "已添加 ✓",
+    "selectAtLeast2": "再添加至少一个工具进行比较",
+    "clearAll": "清空全部",
+    "allTools": "所有工具"
+  },"categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
   "support": {
     "title": "支持AI Hub", "subtitle": "AI Hub是免费项目，您的支持帮助我们成长。",
     "whatEnables": "您的支持能实现什么",

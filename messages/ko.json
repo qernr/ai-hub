@@ -59,7 +59,20 @@
     "addMoreToCompare": "도구 추가 (최대 4개)",
     "compareNav": "비교", "compareTitle": "AI 도구 비교", "compareToolsCount": "도구", "bestChoice": "최선의 선택"
   },
-  "categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
+    "compare": {
+    "title": "AI 도구 비교",
+    "subtitle": "최대 4개 도구를 추가하여 비교하세요",
+    "addTools": "도구 추가",
+    "searchPlaceholder": "도구 검색...",
+    "selected": "선택됨",
+    "empty": "선택된 도구 없음",
+    "emptyDesc": "아래에서 최대 4개 도구를 검색해 추가하세요",
+    "addBtn": "추가",
+    "added": "추가됨 ✓",
+    "selectAtLeast2": "비교할 도구를 하나 더 추가하세요",
+    "clearAll": "전체 초기화",
+    "allTools": "모든 도구"
+  },"categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
   "support": {
     "title": "AI Hub 후원", "subtitle": "AI Hub는 무료 프로젝트입니다. 후원이 성장에 도움됩니다.",
     "whatEnables": "후원으로 가능한 것",

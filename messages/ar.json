@@ -59,7 +59,20 @@
     "addMoreToCompare": "أضف المزيد من الأدوات (الحد الأقصى 4)",
     "compareNav": "المقارنة", "compareTitle": "مقارنة أدوات الذكاء الاصطناعي", "compareToolsCount": "أدوات", "bestChoice": "أفضل اختيار"
   },
-  "categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
+    "compare": {
+    "title": "مقارنة أدوات الذكاء الاصطناعي",
+    "subtitle": "أضف حتى 4 أدوات للمقارنة",
+    "addTools": "إضافة أدوات",
+    "searchPlaceholder": "بحث عن أداة...",
+    "selected": "المحدد",
+    "empty": "لم يتم تحديد أدوات",
+    "emptyDesc": "ابحث وأضف حتى 4 أدوات أدناه",
+    "addBtn": "إضافة",
+    "added": "تمت الإضافة ✓",
+    "selectAtLeast2": "أضف أداة واحدة على الأقل للمقارنة",
+    "clearAll": "مسح الكل",
+    "allTools": "جميع الأدوات"
+  },"categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
   "support": {
     "title": "ادعم AI Hub", "subtitle": "AI Hub مشروع مجاني. دعمك يساعدنا على النمو.",
     "whatEnables": "ما يمكّنه دعمك",

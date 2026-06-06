@@ -59,7 +59,20 @@
     "addMoreToCompare": "Weitere Tools hinzufügen (max. 4)",
     "compareNav": "Vergleich", "compareTitle": "KI-Tools vergleichen", "compareToolsCount": "Tools", "bestChoice": "Beste Wahl"
   },
-  "categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
+    "compare": {
+    "title": "KI-Tools vergleichen",
+    "subtitle": "Fügen Sie bis zu 4 Tools zum Vergleich hinzu",
+    "addTools": "Tools hinzufügen",
+    "searchPlaceholder": "Tool suchen...",
+    "selected": "Ausgewählt",
+    "empty": "Keine Tools ausgewählt",
+    "emptyDesc": "Suchen und fügen Sie bis zu 4 Tools hinzu",
+    "addBtn": "Hinzufügen",
+    "added": "Hinzugefügt ✓",
+    "selectAtLeast2": "Fügen Sie mindestens ein weiteres Tool hinzu",
+    "clearAll": "Alles löschen",
+    "allTools": "Alle Tools"
+  },"categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
   "support": {
     "title": "AI Hub unterstützen", "subtitle": "AI Hub ist ein kostenloses Projekt. Ihre Unterstützung hilft uns zu wachsen.",
     "whatEnables": "Was Ihre Unterstützung ermöglicht",

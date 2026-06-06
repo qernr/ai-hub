@@ -47,7 +47,10 @@
     "prosAndCons": "Pros y contras", "pros": "Pros", "cons": "Contras",
     "howToUse": "Cómo usar", "alternatives": "Alternativas a",
     "alternativesDesc": "Herramientas similares a considerar",
-    "featured": "Destacado", "details": "Detalles", "visit": "Visitar", "lastUpdated": "Actualizado"
+    "featured": "Destacado", "details": "Detalles", "visit": "Visitar", "lastUpdated": "Actualizado",
+    "compareWith": "Comparar con",
+    "current": "Actual",
+    "pricing": "Precio"
   },
   "categories": { "title": "Categorías de IA", "desc": "Explora {count} categorías", "tools": "herramientas", "tool": "herramienta" },
   "support": {

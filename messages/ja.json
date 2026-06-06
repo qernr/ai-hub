@@ -47,7 +47,10 @@
     "prosAndCons": "長所と短所", "pros": "長所", "cons": "短所",
     "howToUse": "使い方", "alternatives": "の代替ツール",
     "alternativesDesc": "検討すべき類似ツール",
-    "featured": "注目", "details": "詳細", "visit": "訪問", "lastUpdated": "更新日"
+    "featured": "注目", "details": "詳細", "visit": "訪問", "lastUpdated": "更新日",
+    "compareWith": "比較する",
+    "current": "現在",
+    "pricing": "料金"
   },
   "categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
   "support": {

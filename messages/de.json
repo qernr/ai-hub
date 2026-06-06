@@ -47,7 +47,10 @@
     "prosAndCons": "Vor- und Nachteile", "pros": "Vorteile", "cons": "Nachteile",
     "howToUse": "Verwendung", "alternatives": "Alternativen zu",
     "alternativesDesc": "Ähnliche Tools, die Sie in Betracht ziehen sollten",
-    "featured": "Empfohlen", "details": "Details", "visit": "Besuchen", "lastUpdated": "Aktualisiert"
+    "featured": "Empfohlen", "details": "Details", "visit": "Besuchen", "lastUpdated": "Aktualisiert",
+    "compareWith": "Vergleichen mit",
+    "current": "Aktuell",
+    "pricing": "Preis"
   },
   "categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
   "support": {

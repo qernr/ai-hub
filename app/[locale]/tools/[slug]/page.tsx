@@ -4,12 +4,13 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, ExternalLink, CheckCircle2, XCircle, BookOpen, Lightbulb } from 'lucide-react'
+import { ArrowLeft, ExternalLink, CheckCircle2, XCircle, BookOpen, Lightbulb, TrendingUp, TrendingDown } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { ToolCard } from '@/components/tools/ToolCard'
+import { CompareTable } from '@/components/tools/CompareTable'
 import { cn, pricingLabel, pricingColor, formatDate } from '@/lib/utils'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
@@ -143,18 +144,37 @@ export default async function ToolPage({ params }: ToolPageProps) {
         {/* Pros & Cons */}
         {(pros.length > 0 || cons.length > 0) && (
           <section className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{t('prosAndCons')}</h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{t('prosAndCons')}</h2>
+              {pros.length > 0 && cons.length > 0 && (
+                <div className="flex items-center gap-3 text-sm">
+                  <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium">
+                    <TrendingUp className="h-4 w-4" /> {pros.length}
+                  </span>
+                  <div className="h-2 w-24 rounded-full bg-red-100 dark:bg-red-950/40 overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500 transition-all"
+                      style={{ width: `${Math.round((pros.length / (pros.length + cons.length)) * 100)}%` }}
+                    />
+                  </div>
+                  <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-medium">
+                    <TrendingDown className="h-4 w-4" /> {cons.length}
+                  </span>
+                </div>
+              )}
+            </div>
+            <div className="grid gap-5 md:grid-cols-2">
               {pros.length > 0 && (
-                <div className="rounded-xl border border-emerald-100 dark:border-emerald-900 bg-emerald-50 dark:bg-emerald-950/30 p-5">
-                  <h3 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-3 flex items-center gap-2">
+                <div className="rounded-xl border border-emerald-100 dark:border-emerald-900/60 bg-emerald-50 dark:bg-emerald-950/20 p-5">
+                  <h3 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-4 flex items-center gap-2 text-base">
                     <CheckCircle2 className="h-5 w-5" />
                     {t('pros')}
+                    <span className="ml-auto text-xs font-normal bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 rounded-full px-2 py-0.5">{pros.length}</span>
                   </h3>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {pros.map((pro, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-emerald-700 dark:text-emerald-400">
-                        <CheckCircle2 className="h-4 w-4 mt-0.5 shrink-0 text-emerald-500" />
+                      <li key={i} className="flex items-start gap-2.5 text-sm text-emerald-800 dark:text-emerald-300 leading-relaxed">
+                        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 text-xs font-bold mt-0.5">{i + 1}</span>
                         {pro}
                       </li>
                     ))}
@@ -162,15 +182,16 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 </div>
               )}
               {cons.length > 0 && (
-                <div className="rounded-xl border border-red-100 dark:border-red-900 bg-red-50 dark:bg-red-950/30 p-5">
-                  <h3 className="font-semibold text-red-800 dark:text-red-300 mb-3 flex items-center gap-2">
+                <div className="rounded-xl border border-red-100 dark:border-red-900/60 bg-red-50 dark:bg-red-950/20 p-5">
+                  <h3 className="font-semibold text-red-800 dark:text-red-300 mb-4 flex items-center gap-2 text-base">
                     <XCircle className="h-5 w-5" />
                     {t('cons')}
+                    <span className="ml-auto text-xs font-normal bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 rounded-full px-2 py-0.5">{cons.length}</span>
                   </h3>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {cons.map((con, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-red-700 dark:text-red-400">
-                        <XCircle className="h-4 w-4 mt-0.5 shrink-0 text-red-400" />
+                      <li key={i} className="flex items-start gap-2.5 text-sm text-red-800 dark:text-red-300 leading-relaxed">
+                        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 dark:bg-red-900/50 text-red-500 dark:text-red-400 text-xs font-bold mt-0.5">{i + 1}</span>
                         {con}
                       </li>
                     ))}
@@ -207,11 +228,32 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 {t('alternatives')} {tool.name}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">{t('alternativesDesc')}</p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
                 {alternativeTools.map((alt) => (
                   <ToolCard key={alt.id} tool={alt} />
                 ))}
               </div>
+              <CompareTable
+                current={{
+                  slug: tool.slug,
+                  name: tool.name,
+                  logo: tool.logo,
+                  pricingType: tool.pricingType,
+                  pros,
+                  cons,
+                }}
+                alternatives={alternativeTools.map((alt) => {
+                  const altTr = (alt.translations as Record<string, { pros?: string[]; cons?: string[] }> | null)?.[locale]
+                  return {
+                    slug: alt.slug,
+                    name: alt.name,
+                    logo: alt.logo,
+                    pricingType: alt.pricingType,
+                    pros: altTr?.pros ?? alt.pros,
+                    cons: altTr?.cons ?? alt.cons,
+                  }
+                })}
+              />
             </section>
           </>
         )}

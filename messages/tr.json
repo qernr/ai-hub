@@ -47,7 +47,10 @@
     "prosAndCons": "Artılar ve eksiler", "pros": "Artılar", "cons": "Eksiler",
     "howToUse": "Nasıl kullanılır", "alternatives": "Alternatifleri",
     "alternativesDesc": "Değerlendirilebilecek benzer araçlar",
-    "featured": "Öne Çıkan", "details": "Detaylar", "visit": "Ziyaret", "lastUpdated": "Güncellendi"
+    "featured": "Öne Çıkan", "details": "Detaylar", "visit": "Ziyaret", "lastUpdated": "Güncellendi",
+    "compareWith": "Karşılaştır",
+    "current": "Mevcut",
+    "pricing": "Fiyat"
   },
   "categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
   "support": {

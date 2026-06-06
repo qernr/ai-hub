@@ -47,7 +47,10 @@
     "prosAndCons": "Pro e contro", "pros": "Pro", "cons": "Contro",
     "howToUse": "Come usare", "alternatives": "Alternative a",
     "alternativesDesc": "Strumenti simili da considerare",
-    "featured": "In evidenza", "details": "Dettagli", "visit": "Visita", "lastUpdated": "Aggiornato"
+    "featured": "In evidenza", "details": "Dettagli", "visit": "Visita", "lastUpdated": "Aggiornato",
+    "compareWith": "Confronta con",
+    "current": "Attuale",
+    "pricing": "Prezzo"
   },
   "categories": { "title": "Categorie di strumenti AI", "desc": "Sfoglia {count} categorie", "tools": "strumenti", "tool": "strumento" },
   "support": {

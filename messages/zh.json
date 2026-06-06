@@ -47,7 +47,10 @@
     "prosAndCons": "优缺点", "pros": "优点", "cons": "缺点",
     "howToUse": "使用方法", "alternatives": "的替代品",
     "alternativesDesc": "值得考虑的类似工具",
-    "featured": "精选", "details": "详情", "visit": "访问", "lastUpdated": "更新时间"
+    "featured": "精选", "details": "详情", "visit": "访问", "lastUpdated": "更新时间",
+    "compareWith": "与...比较",
+    "current": "当前",
+    "pricing": "定价"
   },
   "categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
   "support": {

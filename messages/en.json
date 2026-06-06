@@ -64,7 +64,10 @@
     "featured": "Featured",
     "details": "Details",
     "visit": "Visit",
-    "lastUpdated": "Last updated"
+    "lastUpdated": "Last updated",
+    "compareWith": "Compare with",
+    "current": "Current",
+    "pricing": "Pricing"
   },
   "categories": {
     "title": "AI Tool Categories",

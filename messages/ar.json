@@ -47,7 +47,10 @@
     "prosAndCons": "الإيجابيات والسلبيات", "pros": "الإيجابيات", "cons": "السلبيات",
     "howToUse": "كيفية الاستخدام", "alternatives": "بدائل",
     "alternativesDesc": "أدوات مماثلة قد تفكر فيها",
-    "featured": "مميز", "details": "التفاصيل", "visit": "زيارة", "lastUpdated": "آخر تحديث"
+    "featured": "مميز", "details": "التفاصيل", "visit": "زيارة", "lastUpdated": "آخر تحديث",
+    "compareWith": "مقارنة مع",
+    "current": "الحالي",
+    "pricing": "السعر"
   },
   "categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
   "support": {

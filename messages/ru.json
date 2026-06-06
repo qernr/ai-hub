@@ -64,7 +64,10 @@
     "featured": "Популярное",
     "details": "Подробнее",
     "visit": "Открыть",
-    "lastUpdated": "Обновлено"
+    "lastUpdated": "Обновлено",
+    "compareWith": "Сравнить с",
+    "current": "Текущий",
+    "pricing": "Цена"
   },
   "categories": {
     "title": "Категории ИИ-инструментов",

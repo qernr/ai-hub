@@ -47,7 +47,10 @@
     "prosAndCons": "장단점", "pros": "장점", "cons": "단점",
     "howToUse": "사용 방법", "alternatives": "대안",
     "alternativesDesc": "고려할 만한 유사 도구",
-    "featured": "추천", "details": "자세히", "visit": "방문", "lastUpdated": "업데이트"
+    "featured": "추천", "details": "자세히", "visit": "방문", "lastUpdated": "업데이트",
+    "compareWith": "비교하기",
+    "current": "현재",
+    "pricing": "가격"
   },
   "categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
   "support": {

@@ -71,7 +71,8 @@
     "added": "Aggiunto ✓",
     "selectAtLeast2": "Aggiungi almeno un altro strumento",
     "clearAll": "Cancella tutto",
-    "allTools": "Tutti gli strumenti"
+    "allTools": "Tutti gli strumenti",
+    "summaryBestOverall": "Scelta migliore", "summaryMostPros": "Piu pro", "summaryFewestCons": "Meno contro", "summaryBestFree": "Migliore gratuita", "summaryNone": "u2014", "summaryStrengths": "Punti di forza", "summaryWeaknesses": "Punti deboli", "summaryPros": "pro", "summaryCons": "contro", "summaryWhy": "Perche vince", "summaryScore": "punteggio", "summary": "Riepilogo confronto"
   },"categories": { "title": "Categorie di strumenti AI", "desc": "Sfoglia {count} categorie", "tools": "strumenti", "tool": "strumento" },
   "support": {
     "title": "Supporta AI Hub", "subtitle": "AI Hub è un progetto gratuito. Il tuo supporto ci aiuta a crescere.",

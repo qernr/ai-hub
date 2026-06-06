@@ -71,7 +71,8 @@
     "added": "Ajouté ✓",
     "selectAtLeast2": "Ajoutez au moins un autre outil",
     "clearAll": "Tout effacer",
-    "allTools": "Tous les outils"
+    "allTools": "Tous les outils",
+    "summaryBestOverall": "Meilleur choix", "summaryMostPros": "Plus avantages", "summaryFewestCons": "Moins inconvenients", "summaryBestFree": "Meilleure option gratuite", "summaryNone": "u2014", "summaryStrengths": "Points forts", "summaryWeaknesses": "Points faibles", "summaryPros": "avantages", "summaryCons": "inconvenients", "summaryWhy": "Pourquoi meilleur", "summaryScore": "score", "summary": "Resume de comparaison"
   },"categories": { "title": "Catégories d'outils IA", "desc": "Parcourez {count} catégories", "tools": "outils", "tool": "outil" },
   "support": {
     "title": "Soutenir AI Hub", "subtitle": "AI Hub est un projet gratuit. Votre soutien nous aide à grandir.",

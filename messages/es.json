@@ -71,7 +71,8 @@
     "added": "Añadido ✓",
     "selectAtLeast2": "Añade al menos una herramienta más",
     "clearAll": "Borrar todo",
-    "allTools": "Todas las herramientas"
+    "allTools": "Todas las herramientas",
+    "summaryBestOverall": "Mejor opcion", "summaryMostPros": "Mas ventajas", "summaryFewestCons": "Menos desventajas", "summaryBestFree": "Mejor opcion gratuita", "summaryNone": "u2014", "summaryStrengths": "Puntos fuertes", "summaryWeaknesses": "Puntos debiles", "summaryPros": "ventajas", "summaryCons": "desventajas", "summaryWhy": "Por que gana", "summaryScore": "puntuacion", "summary": "Resumen de comparacion"
   },"categories": { "title": "Categorías de IA", "desc": "Explora {count} categorías", "tools": "herramientas", "tool": "herramienta" },
   "support": {
     "title": "Apoya AI Hub", "subtitle": "AI Hub es un proyecto gratuito. Tu apoyo nos ayuda a crecer.",

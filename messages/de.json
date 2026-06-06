@@ -71,7 +71,8 @@
     "added": "Hinzugefügt ✓",
     "selectAtLeast2": "Fügen Sie mindestens ein weiteres Tool hinzu",
     "clearAll": "Alles löschen",
-    "allTools": "Alle Tools"
+    "allTools": "Alle Tools",
+    "summaryBestOverall": "Beste Wahl", "summaryMostPros": "Meiste Vorteile", "summaryFewestCons": "Wenigste Nachteile", "summaryBestFree": "Beste kostenlose Option", "summaryNone": "u2014", "summaryStrengths": "Staerken", "summaryWeaknesses": "Schwaerchen", "summaryPros": "Vorteile", "summaryCons": "Nachteile", "summaryWhy": "Warum besser", "summaryScore": "Punkte", "summary": "Vergleichszusammenfassung"
   },"categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
   "support": {
     "title": "AI Hub unterstützen", "subtitle": "AI Hub ist ein kostenloses Projekt. Ihre Unterstützung hilft uns zu wachsen.",

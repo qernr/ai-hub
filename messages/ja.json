@@ -71,7 +71,8 @@
     "added": "追加済み ✓",
     "selectAtLeast2": "もう1件追加して比較してください",
     "clearAll": "すべてクリア",
-    "allTools": "全ツール"
+    "allTools": "全ツール",
+    "summaryBestOverall": "ベストな選択", "summaryMostPros": "最多の長所", "summaryFewestCons": "最少の短所", "summaryBestFree": "最良の無料選択肢", "summaryNone": "u2014", "summaryStrengths": "強み", "summaryWeaknesses": "弱み", "summaryPros": "長所", "summaryCons": "短所", "summaryWhy": "なぜ優れているか", "summaryScore": "スコア", "summary": "比較サマリー"
   },"categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
   "support": {
     "title": "AI Hubをサポート", "subtitle": "AI Hubは無料プロジェクトです。サポートが成長を助けます。",

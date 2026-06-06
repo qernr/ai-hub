@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { X, GitCompare, Trash2, Trophy, TrendingUp, TrendingDown, ExternalLink } from 'lucide-react'
+import { X, GitCompare, Trash2, Trophy, CheckCircle2, XCircle, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useCompare } from '@/hooks/useCompare'
 import { cn, pricingColor } from '@/lib/utils'
@@ -99,13 +99,9 @@ export function CompareBar() {
                     </span>
                     {/* Score */}
                     <div className="flex items-center gap-2 text-xs mt-1">
-                      <span className="flex items-center gap-0.5 text-emerald-600 dark:text-emerald-400 font-semibold">
-                        <TrendingUp className="h-3.5 w-3.5" />{tool.pros.length}
-                      </span>
+                      <span className="text-emerald-600 dark:text-emerald-400 font-semibold">✓ {tool.pros.length}</span>
                       <span className="text-gray-300 dark:text-slate-600">|</span>
-                      <span className="flex items-center gap-0.5 text-red-500 dark:text-red-400 font-semibold">
-                        <TrendingDown className="h-3.5 w-3.5" />{tool.cons.length}
-                      </span>
+                      <span className="text-red-500 dark:text-red-400 font-semibold">✗ {tool.cons.length}</span>
                     </div>
                     <button onClick={() => removeTool(tool.slug)} className="text-xs text-gray-400 hover:text-red-500 flex items-center gap-0.5 mt-1 transition-colors">
                       <X className="h-3 w-3" /> {t('removeFromCompare')}
@@ -134,7 +130,7 @@ export function CompareBar() {
               {/* Pros header */}
               <div className="grid bg-emerald-50 dark:bg-emerald-950/20 border-b dark:border-slate-700" style={{ gridTemplateColumns: `160px repeat(${items.length}, 1fr)` }}>
                 <div className="px-4 py-2.5 flex items-center gap-1.5">
-                  <TrendingUp className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
                   <span className="text-xs font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400">{t('pros')}</span>
                 </div>
                 {items.map((tool, idx) => (
@@ -170,7 +166,7 @@ export function CompareBar() {
               {/* Cons header */}
               <div className="grid bg-red-50 dark:bg-red-950/20 border-b dark:border-slate-700" style={{ gridTemplateColumns: `160px repeat(${items.length}, 1fr)` }}>
                 <div className="px-4 py-2.5 flex items-center gap-1.5">
-                  <TrendingDown className="h-3.5 w-3.5 text-red-500 dark:text-red-400" />
+                  <XCircle className="h-3.5 w-3.5 text-red-500 dark:text-red-400" />
                   <span className="text-xs font-semibold uppercase tracking-wide text-red-600 dark:text-red-400">{t('cons')}</span>
                 </div>
                 {items.map((tool, idx) => (

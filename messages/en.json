@@ -91,7 +91,19 @@
     "added": "Added ✓",
     "selectAtLeast2": "Add at least one more tool to compare",
     "clearAll": "Clear all",
-    "allTools": "All tools"
+    "allTools": "All tools",
+    "summary": "Comparison Summary",
+    "summaryBestOverall": "Best overall",
+    "summaryMostPros": "Most pros",
+    "summaryFewestCons": "Fewest cons",
+    "summaryBestFree": "Best free option",
+    "summaryNone": "—",
+    "summaryStrengths": "Strengths",
+    "summaryWeaknesses": "Weaknesses",
+    "summaryPros": "pros",
+    "summaryCons": "cons",
+    "summaryWhy": "Why it wins",
+    "summaryScore": "score"
   },
   "categories": {
     "title": "AI Tool Categories",

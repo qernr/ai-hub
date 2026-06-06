@@ -71,7 +71,8 @@
     "added": "Eklendi ✓",
     "selectAtLeast2": "Karşılaştırmak için en az bir araç daha ekle",
     "clearAll": "Tümünü temizle",
-    "allTools": "Tüm araçlar"
+    "allTools": "Tüm araçlar",
+    "summaryBestOverall": "En iyi secim", "summaryMostPros": "En fazla arti", "summaryFewestCons": "En az eksi", "summaryBestFree": "En iyi ucretsiz", "summaryNone": "u2014", "summaryStrengths": "Guclu yonler", "summaryWeaknesses": "Zayif yonler", "summaryPros": "arti", "summaryCons": "eksi", "summaryWhy": "Neden daha iyi", "summaryScore": "puan", "summary": "Karsilastirma Ozeti"
   },"categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
   "support": {
     "title": "AI Hub'ı Destekle", "subtitle": "AI Hub ücretsiz bir projedir. Desteğin büyümemize yardımcı olur.",

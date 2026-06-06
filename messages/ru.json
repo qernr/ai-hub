@@ -91,7 +91,19 @@
     "added": "Добавлено ✓",
     "selectAtLeast2": "Добавьте ещё хотя бы одну нейросеть для сравнения",
     "clearAll": "Очистить всё",
-    "allTools": "Все нейросети"
+    "allTools": "Все нейросети",
+    "summary": "Итог сравнения",
+    "summaryBestOverall": "Лучший выбор",
+    "summaryMostPros": "Больше плюсов",
+    "summaryFewestCons": "Меньше минусов",
+    "summaryBestFree": "Лучший бесплатный",
+    "summaryNone": "—",
+    "summaryStrengths": "Сильные стороны",
+    "summaryWeaknesses": "Слабые стороны",
+    "summaryPros": "плюсов",
+    "summaryCons": "минусов",
+    "summaryWhy": "Почему лучше",
+    "summaryScore": "балл"
   },
   "categories": {
     "title": "Категории ИИ-инструментов",

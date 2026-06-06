@@ -71,7 +71,8 @@
     "added": "تمت الإضافة ✓",
     "selectAtLeast2": "أضف أداة واحدة على الأقل للمقارنة",
     "clearAll": "مسح الكل",
-    "allTools": "جميع الأدوات"
+    "allTools": "جميع الأدوات",
+    "summaryBestOverall": "أفضل اختيار", "summaryMostPros": "أكثر المزايا", "summaryFewestCons": "أقل العيوب", "summaryBestFree": "أفضل خيار مجاني", "summaryNone": "u2014", "summaryStrengths": "نقاط القوة", "summaryWeaknesses": "نقاط الضعف", "summaryPros": "مزايا", "summaryCons": "عيوب", "summaryWhy": "لماذا أفضل", "summaryScore": "نقاط", "summary": "ملخص المقارنة"
   },"categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
   "support": {
     "title": "ادعم AI Hub", "subtitle": "AI Hub مشروع مجاني. دعمك يساعدنا على النمو.",

@@ -71,7 +71,8 @@
     "added": "已添加 ✓",
     "selectAtLeast2": "再添加至少一个工具进行比较",
     "clearAll": "清空全部",
-    "allTools": "所有工具"
+    "allTools": "所有工具",
+    "summaryBestOverall": "最佳选择", "summaryMostPros": "优点最多", "summaryFewestCons": "缺点最少", "summaryBestFree": "最佳免费选项", "summaryNone": "u2014", "summaryStrengths": "优势", "summaryWeaknesses": "劣势", "summaryPros": "优点", "summaryCons": "缺点", "summaryWhy": "为何更好", "summaryScore": "得分", "summary": "比較摘要"
   },"categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
   "support": {
     "title": "支持AI Hub", "subtitle": "AI Hub是免费项目，您的支持帮助我们成长。",

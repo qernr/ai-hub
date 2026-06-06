@@ -50,7 +50,13 @@
     "featured": "精选", "details": "详情", "visit": "访问", "lastUpdated": "更新时间",
     "compareWith": "与...比较",
     "current": "当前",
-    "pricing": "定价"
+    "pricing": "定价",
+    "addToCompare": "比较",
+    "removeFromCompare": "移除",
+    "compareSelected": "比较",
+    "clearComparison": "清空",
+    "comparisonBar": "比较",
+    "addMoreToCompare": "添加更多工具（最多4个）"
   },
   "categories": { "title": "AI工具分类", "desc": "浏览{count}个分类", "tools": "工具", "tool": "工具" },
   "support": {

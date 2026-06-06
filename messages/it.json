@@ -50,7 +50,13 @@
     "featured": "In evidenza", "details": "Dettagli", "visit": "Visita", "lastUpdated": "Aggiornato",
     "compareWith": "Confronta con",
     "current": "Attuale",
-    "pricing": "Prezzo"
+    "pricing": "Prezzo",
+    "addToCompare": "Confronta",
+    "removeFromCompare": "Rimuovi",
+    "compareSelected": "Confronta",
+    "clearComparison": "Svuota",
+    "comparisonBar": "Confronto",
+    "addMoreToCompare": "Aggiungi altri strumenti (max 4)"
   },
   "categories": { "title": "Categorie di strumenti AI", "desc": "Sfoglia {count} categorie", "tools": "strumenti", "tool": "strumento" },
   "support": {

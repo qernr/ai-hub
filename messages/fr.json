@@ -50,7 +50,13 @@
     "featured": "En vedette", "details": "Détails", "visit": "Visiter", "lastUpdated": "Mis à jour",
     "compareWith": "Comparer avec",
     "current": "Actuel",
-    "pricing": "Prix"
+    "pricing": "Prix",
+    "addToCompare": "Comparer",
+    "removeFromCompare": "Retirer",
+    "compareSelected": "Comparer",
+    "clearComparison": "Vider",
+    "comparisonBar": "Comparaison",
+    "addMoreToCompare": "Ajoutez des outils (max 4)"
   },
   "categories": { "title": "Catégories d'outils IA", "desc": "Parcourez {count} catégories", "tools": "outils", "tool": "outil" },
   "support": {

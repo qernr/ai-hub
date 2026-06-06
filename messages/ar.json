@@ -50,7 +50,13 @@
     "featured": "مميز", "details": "التفاصيل", "visit": "زيارة", "lastUpdated": "آخر تحديث",
     "compareWith": "مقارنة مع",
     "current": "الحالي",
-    "pricing": "السعر"
+    "pricing": "السعر",
+    "addToCompare": "مقارنة",
+    "removeFromCompare": "إزالة",
+    "compareSelected": "مقارنة",
+    "clearComparison": "مسح",
+    "comparisonBar": "المقارنة",
+    "addMoreToCompare": "أضف المزيد من الأدوات (الحد الأقصى 4)"
   },
   "categories": { "title": "فئات أدوات الذكاء الاصطناعي", "desc": "تصفح {count} فئات", "tools": "أدوات", "tool": "أداة" },
   "support": {

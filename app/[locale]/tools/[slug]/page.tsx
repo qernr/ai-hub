@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { ToolCard } from '@/components/tools/ToolCard'
 import { CompareTable } from '@/components/tools/CompareTable'
+import { AddToCompareButton } from '@/components/tools/AddToCompareButton'
 import { cn, pricingLabel, pricingColor, formatDate } from '@/lib/utils'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
@@ -125,12 +126,24 @@ export default async function ToolPage({ params }: ToolPageProps) {
               ))}
             </div>
           </div>
-          <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer">
-            <Button className="gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 shrink-0">
-              <ExternalLink className="h-4 w-4" />
-              {t('visitWebsite')}
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
+            <AddToCompareButton
+              tool={{
+                slug: tool.slug,
+                name: tool.name,
+                logo: tool.logo,
+                pricingType: tool.pricingType,
+                pros,
+                cons,
+              }}
+            />
+            <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer">
+              <Button className="gap-2 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 w-full sm:w-auto">
+                <ExternalLink className="h-4 w-4" />
+                {t('visitWebsite')}
+              </Button>
+            </a>
+          </div>
         </div>
 
         {/* Description */}

@@ -67,7 +67,13 @@
     "lastUpdated": "Last updated",
     "compareWith": "Compare with",
     "current": "Current",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "addToCompare": "Compare",
+    "removeFromCompare": "Remove",
+    "compareSelected": "Compare",
+    "clearComparison": "Clear",
+    "comparisonBar": "Compare",
+    "addMoreToCompare": "Add more tools to compare (max 4)"
   },
   "categories": {
     "title": "AI Tool Categories",

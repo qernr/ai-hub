@@ -50,7 +50,13 @@
     "featured": "注目", "details": "詳細", "visit": "訪問", "lastUpdated": "更新日",
     "compareWith": "比較する",
     "current": "現在",
-    "pricing": "料金"
+    "pricing": "料金",
+    "addToCompare": "比較",
+    "removeFromCompare": "削除",
+    "compareSelected": "比較",
+    "clearComparison": "クリア",
+    "comparisonBar": "比較",
+    "addMoreToCompare": "ツールを追加（最大4件）"
   },
   "categories": { "title": "AIツールカテゴリ", "desc": "{count}カテゴリを閲覧", "tools": "ツール", "tool": "ツール" },
   "support": {

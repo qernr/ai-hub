@@ -67,7 +67,13 @@
     "lastUpdated": "Обновлено",
     "compareWith": "Сравнить с",
     "current": "Текущий",
-    "pricing": "Цена"
+    "pricing": "Цена",
+    "addToCompare": "К сравнению",
+    "removeFromCompare": "Убрать",
+    "compareSelected": "Сравнить",
+    "clearComparison": "Очистить",
+    "comparisonBar": "Сравнение",
+    "addMoreToCompare": "Добавьте ещё инструменты (макс. 4)"
   },
   "categories": {
     "title": "Категории ИИ-инструментов",

@@ -50,7 +50,13 @@
     "featured": "Empfohlen", "details": "Details", "visit": "Besuchen", "lastUpdated": "Aktualisiert",
     "compareWith": "Vergleichen mit",
     "current": "Aktuell",
-    "pricing": "Preis"
+    "pricing": "Preis",
+    "addToCompare": "Vergleichen",
+    "removeFromCompare": "Entfernen",
+    "compareSelected": "Vergleichen",
+    "clearComparison": "Leeren",
+    "comparisonBar": "Vergleich",
+    "addMoreToCompare": "Weitere Tools hinzufügen (max. 4)"
   },
   "categories": { "title": "KI-Tool-Kategorien", "desc": "{count} Kategorien durchsuchen", "tools": "Tools", "tool": "Tool" },
   "support": {

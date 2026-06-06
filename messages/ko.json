@@ -50,7 +50,13 @@
     "featured": "추천", "details": "자세히", "visit": "방문", "lastUpdated": "업데이트",
     "compareWith": "비교하기",
     "current": "현재",
-    "pricing": "가격"
+    "pricing": "가격",
+    "addToCompare": "비교",
+    "removeFromCompare": "제거",
+    "compareSelected": "비교",
+    "clearComparison": "지우기",
+    "comparisonBar": "비교",
+    "addMoreToCompare": "도구 추가 (최대 4개)"
   },
   "categories": { "title": "AI 도구 카테고리", "desc": "{count}개 카테고리 탐색", "tools": "도구", "tool": "도구" },
   "support": {

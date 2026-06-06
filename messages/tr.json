@@ -50,7 +50,13 @@
     "featured": "Öne Çıkan", "details": "Detaylar", "visit": "Ziyaret", "lastUpdated": "Güncellendi",
     "compareWith": "Karşılaştır",
     "current": "Mevcut",
-    "pricing": "Fiyat"
+    "pricing": "Fiyat",
+    "addToCompare": "Karşılaştır",
+    "removeFromCompare": "Kaldır",
+    "compareSelected": "Karşılaştır",
+    "clearComparison": "Temizle",
+    "comparisonBar": "Karşılaştırma",
+    "addMoreToCompare": "Daha fazla araç ekle (maks. 4)"
   },
   "categories": { "title": "Yapay Zeka Araç Kategorileri", "desc": "{count} kategoriyi gözat", "tools": "araç", "tool": "araç" },
   "support": {

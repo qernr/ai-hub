@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, ExternalLink, CheckCircle2, XCircle, BookOpen, Lightbulb, TrendingUp, TrendingDown } from 'lucide-react'
+import { ArrowLeft, ExternalLink, CheckCircle2, XCircle, BookOpen, Lightbulb } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -157,25 +157,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         {/* Pros & Cons */}
         {(pros.length > 0 || cons.length > 0) && (
           <section className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{t('prosAndCons')}</h2>
-              {pros.length > 0 && cons.length > 0 && (
-                <div className="flex items-center gap-3 text-sm">
-                  <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium">
-                    <TrendingUp className="h-4 w-4" /> {pros.length}
-                  </span>
-                  <div className="h-2 w-24 rounded-full bg-red-100 dark:bg-red-950/40 overflow-hidden">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500 transition-all"
-                      style={{ width: `${Math.round((pros.length / (pros.length + cons.length)) * 100)}%` }}
-                    />
-                  </div>
-                  <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-medium">
-                    <TrendingDown className="h-4 w-4" /> {cons.length}
-                  </span>
-                </div>
-              )}
-            </div>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{t('prosAndCons')}</h2>
             <div className="grid gap-5 md:grid-cols-2">
               {pros.length > 0 && (
                 <div className="rounded-xl border border-emerald-100 dark:border-emerald-900/60 bg-emerald-50 dark:bg-emerald-950/20 p-5">

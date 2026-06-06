@@ -26,9 +26,11 @@ export function ToolCard({ tool }: ToolCardProps) {
   const description = translations?.[locale]?.description ?? tool.description
 
   return (
-    <Card className="group flex flex-col overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 dark:bg-slate-800 dark:border-slate-700">
+    <Card className="group relative flex flex-col overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 dark:bg-slate-800 dark:border-slate-700">
+      {/* Full-card cover link — sits below interactive elements */}
+      <Link href={`/tools/${tool.slug}`} className="absolute inset-0 z-0" tabIndex={-1} aria-hidden />
       <CardContent className="flex flex-col flex-1 p-5">
-        <div className="flex items-start gap-3 mb-3">
+        <Link href={`/tools/${tool.slug}`} className="flex items-start gap-3 mb-3 relative z-10">
           <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border dark:border-slate-600 bg-white dark:bg-slate-700 shadow-sm">
             {tool.logo ? (
               <Image
@@ -61,13 +63,15 @@ export function ToolCard({ tool }: ToolCardProps) {
               {tp(tool.pricingType)}
             </span>
           </div>
-        </div>
+        </Link>
 
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed flex-1 mb-4">
-          {truncate(description, 120)}
-        </p>
+        <Link href={`/tools/${tool.slug}`} className="relative z-10">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed flex-1 mb-4">
+            {truncate(description, 120)}
+          </p>
+        </Link>
 
-        <div className="flex flex-wrap gap-1 mb-4">
+        <div className="relative z-10 flex flex-wrap gap-1 mb-4">
           {tool.categories.slice(0, 3).map(({ category }) => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const catName = (tNames as any)(category.slug) ?? category.name
@@ -86,7 +90,7 @@ export function ToolCard({ tool }: ToolCardProps) {
           )}
         </div>
 
-        <div className="flex gap-2 mt-auto">
+        <div className="relative z-10 flex gap-2 mt-auto">
           <Link href={`/tools/${tool.slug}`} className="flex-1">
             <Button variant="outline" size="sm" className="w-full dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700">
               {t('details')}
